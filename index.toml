@@ -9720,6 +9720,11 @@ hash = "bdf0dda60aab59a5b721fe6699aee8db22adc1bf015c1290ce0f526c4ec4ff84"
 metafile = true
 
 [[files]]
+file = "mods/animatica.pw.toml"
+hash = "8cf639c849e6c731af3fba8d8f42fb8aca6e3a9dae102411c38c4c44e6872af7"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "9ce55dc09b4b2a28b39ae47d146cfe5399dfc74666d9ae53811bdef4058b3491"
 metafile = true
@@ -9747,6 +9752,11 @@ metafile = true
 [[files]]
 file = "mods/better-third-person.pw.toml"
 hash = "9d58379cbe25bdabf408a97e8de3ba1bef123b36382bd892e394c5a744d0c05e"
+metafile = true
+
+[[files]]
+file = "mods/bettergrass.pw.toml"
+hash = "36bcdd95e7ee456baecea6ebc80397bc5e067a6dcfef6b5d39f2ecd36662adf2"
 metafile = true
 
 [[files]]
@@ -9785,6 +9795,11 @@ hash = "840724c9076c34ea8cbd88090f197cacecba08e9ca86619e596e2536109db444"
 metafile = true
 
 [[files]]
+file = "mods/continuity.pw.toml"
+hash = "fd9b37c0dd351191944a8ebef602b1f0f35aaeb151dd236f773638bf8b609131"
+metafile = true
+
+[[files]]
 file = "mods/crafting-tweaks.pw.toml"
 hash = "2e10122f9cadd2d63deb39f37cf1351c9cde85fb50df0d8bc9a7737b233de0dd"
 metafile = true
@@ -9795,8 +9810,18 @@ hash = "bcdf6d7a7ff8affa16ffe0d9d0150221c05f778f56adf8d5a09d3461cfb9375f"
 metafile = true
 
 [[files]]
+file = "mods/debugify.pw.toml"
+hash = "e3dbc76d36c6fdca359b48d56d179da8399dc928dd1ff4d265041eae0d89c480"
+metafile = true
+
+[[files]]
 file = "mods/dynamic-crosshair.pw.toml"
 hash = "48eef0d357a773f1631208768b8ba3205c8dc65897765a19d4761efb13d3fa6f"
+metafile = true
+
+[[files]]
+file = "mods/dynamic_fps.pw.toml"
+hash = "5868a8995e30323854585e23dd504adfcc0d6362c68992c8491394b410b5c0c0"
 metafile = true
 
 [[files]]
@@ -9830,6 +9855,11 @@ hash = "f4350b5d0ef34120432b48ffdff89742808967a7582e346d9442ba56b60abf87"
 metafile = true
 
 [[files]]
+file = "mods/enhancedblockentities.pw.toml"
+hash = "add6231ab8479da7625a44683862906ea1dd6586e75c253e90eac7c082d1e8c2"
+metafile = true
+
+[[files]]
 file = "mods/entity-model-features.pw.toml"
 hash = "f4fb9245abbdb8c359a4b4898e9c8f03e2908d32335e4e6e9650d001f669f9aa"
 metafile = true
@@ -9860,8 +9890,18 @@ hash = "ef3a44cb8b521b310967258190e079bcdd5b12ac492149f698e9c5b5a2452221"
 metafile = true
 
 [[files]]
+file = "mods/fastquit.pw.toml"
+hash = "ad68291896e892edafe6d0ef625f0e909a01045bc1e25f5e34a0ceb072f42351"
+metafile = true
+
+[[files]]
 file = "mods/ferritecore-fabric.pw.toml"
 hash = "3aa66d677f5f23ddc8528f0c3243a9cbded0e27ea4b3db089ec0c8deecfb5704"
+metafile = true
+
+[[files]]
+file = "mods/immediatelyfast.pw.toml"
+hash = "990f8363ccc2e08afd4abc86997c42bc4f0b9058c45958080a725da650c4c551"
 metafile = true
 
 [[files]]
@@ -9935,6 +9975,11 @@ hash = "9cc852c7d5024d24f0403b7f86200d2283a89ffc66896123406102e57318844b"
 metafile = true
 
 [[files]]
+file = "mods/modernfix.pw.toml"
+hash = "5f37c9c5eff7ebb5ebb938bb4964c74f7386bfaa09d4fc9f871240cec3f6ab9a"
+metafile = true
+
+[[files]]
 file = "mods/modmenu.pw.toml"
 hash = "c2fe9a1900ceb3a6014ccb83344aa4ab5ddf65c8bf660044469c3c90c7ed9010"
 metafile = true
@@ -9942,6 +9987,11 @@ metafile = true
 [[files]]
 file = "mods/monsters-in-the-closet.pw.toml"
 hash = "7a00dfa3a185736ea12d6e7d1c8f960f779dfab6785b876368b2aaa11e629bb2"
+metafile = true
+
+[[files]]
+file = "mods/moreculling.pw.toml"
+hash = "a70105438f11495884d645c716605182185dc49853a0fb85c249cdc9ca20d121"
 metafile = true
 
 [[files]]
@@ -9992,6 +10042,11 @@ metafile = true
 [[files]]
 file = "mods/reeses-sodium-options.pw.toml"
 hash = "2494505990ebe04a740fbae936efdf4d24a52071c04d3b73d215b9539e59817b"
+metafile = true
+
+[[files]]
+file = "mods/rrls.pw.toml"
+hash = "430849e1f284451740f7ecd31f7691f8cd84e6aa9aa7e8b3b97da31aca5d9cef"
 metafile = true
 
 [[files]]
@@ -10081,6 +10136,11 @@ metafile = true
 [[files]]
 file = "mods/yosbr.pw.toml"
 hash = "bbbcf529b4c35f04e733922ca06dde4aac8d97a556e4396da25d99e2d079c0c9"
+metafile = true
+
+[[files]]
+file = "mods/zoomify.pw.toml"
+hash = "24f8f1b92dc6199ac4646cf490365eb457740b103e643b85a646bb9b4542eb60"
 metafile = true
 
 [[files]]
