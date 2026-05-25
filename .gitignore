@@ -1,0 +1,8 @@
+# Packwiz exportados
+*.zip
+*.mrpack
+
+# Archivos de sistema y temporales
+.DS_Store
+thumbs.db
+index.toml.tmp

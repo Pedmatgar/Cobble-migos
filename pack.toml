@@ -1,0 +1,13 @@
+name = "Cobblemon Official Modpack [Fabric]"
+author = "Cobbled Studios"
+version = "1.7.3"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "8efab3c0785637e32a5a7eaa53aa0569ee28d74b68f17e7cb808583ac8a38d4d"
+
+[versions]
+fabric = "0.18.4"
+minecraft = "1.21.1"
