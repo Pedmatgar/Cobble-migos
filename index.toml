@@ -1,6 +1,14 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".github/workflows/copilot-setup-steps.yml"
+hash = "46beb3d8012976180fe7cd2146cfe2fcd4b967915e43f731bc31264ab96ce9c4"
+
+[[files]]
+file = "README.md"
+hash = "69d4743a746b19ba7a1a18b04d2f03e556136a31a28ffb8e77e5a4d586544925"
+
+[[files]]
 file = "config/craftpresence.json"
 hash = "b881219ef43dcbdb342d3c2c09c268847adbc369e9b8337dce5d1cb80624aaf4"
 
@@ -183,10 +191,6 @@ hash = "f7b6125de1e267744e311629ac0e683717288ed0d94fa9de78d5126c82e04a4b"
 [[files]]
 file = "config/openloader/options.json"
 hash = "a9076d31f99a7c047a0312f28ab47b6238efd759be1bf5e1a8d72dccf7228368"
-
-[[files]]
-file = "config/openloader/resources/Cobblemon-Tips-2.0.zip"
-hash = "4b235f857e98840111f1fbb7f28996ff057b2f6e445aae34e377f8ce33a4a9f5"
 
 [[files]]
 file = "config/yosbr/config/ali/ali_common.json"
@@ -9705,6 +9709,10 @@ file = "instance.png"
 hash = "efd488c2f003cbd4b7ef9a50a9b56c74fb2ddcb8bd4a6721fdf8eceb7a852cf2"
 
 [[files]]
+file = "migrate_mod_sources.py"
+hash = "003db60f8383a2ae8b5c85e373cc8da3663a8a1a1f5768daa6eaeed49bb630e7"
+
+[[files]]
 file = "mods/advanced-loot-info.pw.toml"
 hash = "1acdc752810149339db60b0968ac5578166231d6fda61d2d23aa3caa23b84801"
 metafile = true
@@ -10094,6 +10102,16 @@ file = "mods/swingthrough-1.0.5+1.21.jar"
 hash = "0c29ce4166261f3f995a3a9c47753050983662a4086846ed524a1fe2ecd13353"
 
 [[files]]
+file = "mods/tectonic.pw.toml"
+hash = "e4289903fd7e3406ae125763a57858251d6ecb566114274d7ed88f00217fd894"
+metafile = true
+
+[[files]]
+file = "mods/terralith.pw.toml"
+hash = "da7ee99189ad35aac094919fe33cac647d98533b23c228f10d4811f08989e2b8"
+metafile = true
+
+[[files]]
 file = "mods/tips.pw.toml"
 hash = "be9c0a0671d89b53345d45447db05cb47f0e40bdeb416c81be7d0ef63d65516a"
 metafile = true
@@ -10147,7 +10165,3 @@ metafile = true
 file = "resourcepacks/motschens-better-leaves.pw.toml"
 hash = "8b6513ec92d66dd68550908ac173700f2ed22fb88dcad71709a11b437db3793b"
 metafile = true
-
-[[files]]
-file = "shaderpacks/ComplementaryReimagined_r5.7.1.zip"
-hash = "24a20634a7832d422d3cd5023be16829f26840e25c69404dd418306ea79f63f0"
