@@ -6,6 +6,7 @@ import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Tuple
+from urllib import error, parse, request
 
 import tomllib
 
@@ -16,12 +17,66 @@ class CurseForgeMod:
     slug: str
     name: str
     filename: str
+    hash_format: str
+    hash_value: str
     addon_id: str
     file_id: str
 
 
 def _run(cmd: List[str], cwd: Path) -> subprocess.CompletedProcess[str]:
     return subprocess.run(cmd, cwd=cwd, text=True, capture_output=True)
+
+
+@dataclass
+class ResolvedModrinthVersion:
+    project_id: str
+    version_id: str
+    filename: str
+
+
+def _resolve_modrinth_version_by_hash(mod: CurseForgeMod) -> ResolvedModrinthVersion | None:
+    supported_algorithms = {"sha1", "sha512"}
+    algorithm = mod.hash_format.lower()
+    if algorithm not in supported_algorithms or not mod.hash_value:
+        return None
+
+    params = parse.urlencode({"algorithm": algorithm})
+    url = f"https://api.modrinth.com/v2/version_file/{mod.hash_value}?{params}"
+
+    try:
+        with request.urlopen(url, timeout=10) as response:
+            if response.status != 200:
+                return None
+            data = json.loads(response.read().decode("utf-8"))
+    except (error.HTTPError, error.URLError, TimeoutError, json.JSONDecodeError):
+        return None
+
+    project_id = str(data.get("project_id", ""))
+    version_id = str(data.get("id", ""))
+    files = data.get("files", [])
+    if not project_id or not version_id or not isinstance(files, list):
+        return None
+
+    selected_filename = ""
+    for version_file in files:
+        if not isinstance(version_file, dict):
+            continue
+        hashes = version_file.get("hashes", {})
+        if not isinstance(hashes, dict):
+            continue
+        file_hash = str(hashes.get(algorithm, "")).lower()
+        if file_hash == mod.hash_value.lower():
+            selected_filename = str(version_file.get("filename", ""))
+            break
+
+    if not selected_filename:
+        return None
+
+    return ResolvedModrinthVersion(
+        project_id=project_id,
+        version_id=version_id,
+        filename=selected_filename,
+    )
 
 
 def _load_curseforge_mods(pack_root: Path) -> List[CurseForgeMod]:
@@ -39,6 +94,8 @@ def _load_curseforge_mods(pack_root: Path) -> List[CurseForgeMod]:
                 slug=meta_path.stem.replace(".pw", ""),
                 name=data.get("name", meta_path.stem),
                 filename=data.get("filename", data.get("download", {}).get("filename", "")),
+                hash_format=str(data.get("download", {}).get("hash-format", "")),
+                hash_value=str(data.get("download", {}).get("hash", "")),
                 addon_id=str(update_cf.get("project-id", "")),
                 file_id=str(update_cf.get("file-id", "")),
             )
@@ -79,9 +136,23 @@ def migrate_curseforge_to_modrinth(
                     )
                     continue
 
-        add_mr_cmd = [packwiz_bin, "mr", "add", mod.name]
-        if mod.filename:
-            add_mr_cmd.extend(["--version-filename", mod.filename])
+        resolved_version = _resolve_modrinth_version_by_hash(mod)
+        if resolved_version:
+            add_mr_cmd = [
+                packwiz_bin,
+                "mr",
+                "add",
+                "--project-id",
+                resolved_version.project_id,
+                "--version-id",
+                resolved_version.version_id,
+            ]
+            if resolved_version.filename:
+                add_mr_cmd.extend(["--version-filename", resolved_version.filename])
+        else:
+            add_mr_cmd = [packwiz_bin, "mr", "add", mod.name]
+            if mod.filename:
+                add_mr_cmd.extend(["--version-filename", mod.filename])
         if yes:
             add_mr_cmd.append("-y")
 
