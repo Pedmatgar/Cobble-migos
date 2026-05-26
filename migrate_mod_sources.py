@@ -38,7 +38,7 @@ def _load_curseforge_mods(pack_root: Path) -> List[CurseForgeMod]:
                 meta_path=meta_path,
                 slug=meta_path.stem.replace(".pw", ""),
                 name=data.get("name", meta_path.stem),
-                filename=data.get("download", {}).get("filename", ""),
+                filename=data.get("filename", data.get("download", {}).get("filename", "")),
                 addon_id=str(update_cf.get("project-id", "")),
                 file_id=str(update_cf.get("file-id", "")),
             )
