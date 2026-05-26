@@ -10079,11 +10079,6 @@ hash = "122659d423e8fe5c47b4121bf382e5ceea0ea2c644cd0a08d577cf58ef55d495"
 metafile = true
 
 [[files]]
-file = "mods/reeses-sodium-options.pw.toml"
-hash = "16dbcc0591b503eb3b92c4808910bd059d5bf30a233a333116614058dbcf333c"
-metafile = true
-
-[[files]]
 file = "mods/rrls.pw.toml"
 hash = "430849e1f284451740f7ecd31f7691f8cd84e6aa9aa7e8b3b97da31aca5d9cef"
 metafile = true
