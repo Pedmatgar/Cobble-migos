@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "README.md"
+hash = "2d697c7191a4968ecd74396a146857f01998893c8cec4adee9483e6d0d759240"
+
+[[files]]
 file = "config/craftpresence.json"
 hash = "b881219ef43dcbdb342d3c2c09c268847adbc369e9b8337dce5d1cb80624aaf4"
 
@@ -183,10 +187,6 @@ hash = "f7b6125de1e267744e311629ac0e683717288ed0d94fa9de78d5126c82e04a4b"
 [[files]]
 file = "config/openloader/options.json"
 hash = "a9076d31f99a7c047a0312f28ab47b6238efd759be1bf5e1a8d72dccf7228368"
-
-[[files]]
-file = "config/openloader/resources/Cobblemon-Tips-2.0.zip"
-hash = "4b235f857e98840111f1fbb7f28996ff057b2f6e445aae34e377f8ce33a4a9f5"
 
 [[files]]
 file = "config/yosbr/config/ali/ali_common.json"
@@ -9984,6 +9984,11 @@ hash = "94944bc843327b8c13b34ee3ea4c16671d3102d5ae6845a48e5c86592d9696bb"
 metafile = true
 
 [[files]]
+file = "mods/lithostitched.pw.toml"
+hash = "33a609714e86f6a49d87a9705f1fc8b2c130d623cb28f140ee5947e4db1646c1"
+metafile = true
+
+[[files]]
 file = "mods/lmd.pw.toml"
 hash = "46e175b662617498d6f250e57f3f66b1b39a40252933b3466e1ff6a7f6209725"
 metafile = true
@@ -10128,6 +10133,16 @@ file = "mods/swingthrough-1.0.5+1.21.jar"
 hash = "0c29ce4166261f3f995a3a9c47753050983662a4086846ed524a1fe2ecd13353"
 
 [[files]]
+file = "mods/tectonic.pw.toml"
+hash = "ecfccbecbcd49d3cf878f4df49adc526c4185cc8d8d5c32e292dd43f95a17ab9"
+metafile = true
+
+[[files]]
+file = "mods/terralith.pw.toml"
+hash = "da7ee99189ad35aac094919fe33cac647d98533b23c228f10d4811f08989e2b8"
+metafile = true
+
+[[files]]
 file = "mods/tips.pw.toml"
 hash = "86b8e66a5d0bd757376928425aad3413fb4948b8057fdfddedc3697d107bac50"
 metafile = true
@@ -10181,7 +10196,3 @@ metafile = true
 file = "resourcepacks/motschens-better-leaves.pw.toml"
 hash = "8b6513ec92d66dd68550908ac173700f2ed22fb88dcad71709a11b437db3793b"
 metafile = true
-
-[[files]]
-file = "shaderpacks/ComplementaryReimagined_r5.7.1.zip"
-hash = "24a20634a7832d422d3cd5023be16829f26840e25c69404dd418306ea79f63f0"
