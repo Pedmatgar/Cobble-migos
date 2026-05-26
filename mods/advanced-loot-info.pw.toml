@@ -1,13 +1,13 @@
 name = "Advanced Loot Info"
-filename = "AdvancedLootInfo-fabric-1.21.1-1.7.1.jar"
+filename = "AdvancedLootInfo-fabric-1.21.1-1.11.0.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "32d285b19eb0c09ffadcc8b67548c893a765202b"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/PEPVViac/versions/oZXg0HSi/AdvancedLootInfo-fabric-1.21.1-1.11.0.jar"
+hash-format = "sha512"
+hash = "aaceeeba84e7a83749e5a23bb88080d146e5fa301c754020dff0f144dbf0689f20893df3299d4467acae22b455c818143d39f9c7d33e924b82ebbe3dfd1868e8"
 
 [update]
-[update.curseforge]
-file-id = 7537435
-project-id = 1205426
+[update.modrinth]
+mod-id = "PEPVViac"
+version = "oZXg0HSi"

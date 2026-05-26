@@ -6,3 +6,5 @@
 .DS_Store
 thumbs.db
 index.toml.tmp
+__pycache__/
+*.pyc
