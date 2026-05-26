@@ -20,6 +20,13 @@ class CurseForgeMod:
     file_id: str
 
 
+@dataclass
+class ModrinthMod:
+    meta_path: Path
+    slug: str
+    name: str
+
+
 def _run(cmd: List[str], cwd: Path) -> subprocess.CompletedProcess[str]:
     return subprocess.run(cmd, cwd=cwd, text=True, capture_output=True)
 
@@ -46,6 +53,23 @@ def _load_curseforge_mods(pack_root: Path) -> List[CurseForgeMod]:
     return mods
 
 
+def _load_modrinth_mods(pack_root: Path) -> Dict[str, List[ModrinthMod]]:
+    mods_dir = pack_root / "mods"
+    mods_by_name: Dict[str, List[ModrinthMod]] = {}
+    for meta_path in sorted(mods_dir.glob("*.pw.toml")):
+        text = meta_path.read_text(encoding="utf-8")
+        if 'mode = "metadata:modrinth"' not in text:
+            continue
+        data = tomllib.loads(text)
+        mod = ModrinthMod(
+            meta_path=meta_path,
+            slug=meta_path.stem.replace(".pw", ""),
+            name=data.get("name", meta_path.stem),
+        )
+        mods_by_name.setdefault(mod.name.casefold(), []).append(mod)
+    return mods_by_name
+
+
 def migrate_curseforge_to_modrinth(
     pack_root: str | Path,
     packwiz_bin: str = "packwiz",
@@ -54,11 +78,14 @@ def migrate_curseforge_to_modrinth(
 ) -> Dict[str, object]:
     root = Path(pack_root).resolve()
     mods = _load_curseforge_mods(root)
+    modrinth_by_name = _load_modrinth_mods(root)
     migrated: List[str] = []
     fallback_curseforge: List[str] = []
+    deduplicated_existing_modrinth: List[str] = []
     failures: List[Dict[str, str]] = []
 
     for mod in mods:
+        existing_modrinth = modrinth_by_name.get(mod.name.casefold(), [])
         remove_cmd = [packwiz_bin, "remove", mod.slug]
         if yes:
             remove_cmd.append("-y")
@@ -79,6 +106,33 @@ def migrate_curseforge_to_modrinth(
                     )
                     continue
 
+            if existing_modrinth:
+                remove_existing_failed = False
+                for existing in existing_modrinth:
+                    remove_existing_cmd = [packwiz_bin, "remove", existing.slug]
+                    if yes:
+                        remove_existing_cmd.append("-y")
+                    rm_existing = _run(remove_existing_cmd, root)
+                    if rm_existing.returncode != 0:
+                        remove_existing_by_name = [packwiz_bin, "remove", existing.name]
+                        if yes:
+                            remove_existing_by_name.append("-y")
+                        rm_existing_2 = _run(remove_existing_by_name, root)
+                        if rm_existing_2.returncode != 0:
+                            failures.append(
+                                {
+                                    "mod": mod.name,
+                                    "stage": "remove_existing_modrinth",
+                                    "error": (rm_existing.stdout + rm_existing.stderr + rm_existing_2.stdout + rm_existing_2.stderr)[:1200],
+                                }
+                            )
+                            remove_existing_failed = True
+                            break
+                if remove_existing_failed:
+                    continue
+                if mod.name not in deduplicated_existing_modrinth:
+                    deduplicated_existing_modrinth.append(mod.name)
+
         add_mr_cmd = [packwiz_bin, "mr", "add", mod.name]
         if mod.filename:
             add_mr_cmd.extend(["--version-filename", mod.filename])
@@ -87,6 +141,8 @@ def migrate_curseforge_to_modrinth(
 
         if dry_run:
             migrated.append(mod.name)
+            if existing_modrinth and mod.name not in deduplicated_existing_modrinth:
+                deduplicated_existing_modrinth.append(mod.name)
             continue
 
         add_mr = _run(add_mr_cmd, root)
@@ -145,9 +201,11 @@ def migrate_curseforge_to_modrinth(
         "total_curseforge_mods": len(mods),
         "migrated_to_modrinth_count": len(migrated),
         "fallback_to_curseforge_count": len(fallback_curseforge),
+        "deduplicated_existing_modrinth_count": len(deduplicated_existing_modrinth),
         "failures_count": len(failures),
         "migrated_to_modrinth": migrated,
         "fallback_to_curseforge": fallback_curseforge,
+        "deduplicated_existing_modrinth": deduplicated_existing_modrinth,
         "failures": failures,
     }
 
