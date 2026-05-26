@@ -1,13 +1,13 @@
 name = "Particular ✨ Reforged"
-filename = "particular-1.21.1-Fabric-1.1.2.jar"
-side = "both"
+filename = "particular-1.21.1-Fabric-1.5.0.jar"
+side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "aa59b31359c2211f4a2d401235c4926084d4f97e"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/pYFUU6cq/versions/C3mx5mBl/particular-1.21.1-Fabric-1.5.0.jar"
+hash-format = "sha512"
+hash = "82448d0215d025cc242fb6b91fb23ad0b549673676109f089c750ed160d8eafb2e8017e6610c95c6148cca584600b7aa34bb0012fcb6869c949394b0905869de"
 
 [update]
-[update.curseforge]
-file-id = 6500234
-project-id = 1219053
+[update.modrinth]
+mod-id = "pYFUU6cq"
+version = "C3mx5mBl"

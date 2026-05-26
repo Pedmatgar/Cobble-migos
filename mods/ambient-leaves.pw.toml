@@ -1,0 +1,13 @@
+name = "Ambient Leaves"
+filename = "ambientleaves-1.1.0.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/xfiFS2cg/versions/8karSdnq/ambientleaves-1.1.0.jar"
+hash-format = "sha512"
+hash = "673e18ef2558d5e3ffdfb5cd7dba7d7b82e62a681771f179cc026cbdec8ca3ec87d98964949afca2309da7ed31d0dfb906cc06e0a1fefadbd2ce594137dd1129"
+
+[update]
+[update.modrinth]
+mod-id = "xfiFS2cg"
+version = "8karSdnq"
