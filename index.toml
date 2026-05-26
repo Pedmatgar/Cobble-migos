@@ -185,10 +185,6 @@ file = "config/openloader/options.json"
 hash = "a9076d31f99a7c047a0312f28ab47b6238efd759be1bf5e1a8d72dccf7228368"
 
 [[files]]
-file = "config/openloader/resources/Cobblemon-Tips-2.0.zip"
-hash = "4b235f857e98840111f1fbb7f28996ff057b2f6e445aae34e377f8ce33a4a9f5"
-
-[[files]]
 file = "config/yosbr/config/ali/ali_common.json"
 hash = "266212cdb34ba278f92d1bc3f867c87d06775f5299b543175ed768b48ebe09d4"
 
@@ -10147,7 +10143,3 @@ metafile = true
 file = "resourcepacks/motschens-better-leaves.pw.toml"
 hash = "8b6513ec92d66dd68550908ac173700f2ed22fb88dcad71709a11b437db3793b"
 metafile = true
-
-[[files]]
-file = "shaderpacks/ComplementaryReimagined_r5.7.1.zip"
-hash = "24a20634a7832d422d3cd5023be16829f26840e25c69404dd418306ea79f63f0"
