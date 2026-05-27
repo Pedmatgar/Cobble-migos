@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".github/workflows/ci.yml"
+hash = "07614ff453513a527779c1cfd31d740c01a244ce58dd341ac2e786e58950af2e"
+
+[[files]]
 file = ".github/workflows/copilot-setup-steps.yml"
 hash = "de230a2a9318bdd6bbcb435b93f3906d653b8a75d003c5fc102c54326df4b078"
 

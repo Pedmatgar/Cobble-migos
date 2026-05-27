@@ -18,34 +18,37 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
-      - name: Ensure required API token is set
+      - name: Note skipped checks when CurseForge API token is unavailable
+        if: env.PACKWIZ_CURSEFORGE_API_TOKEN == ''
         run: |
-          if [ -z "${PACKWIZ_CURSEFORGE_API_TOKEN}" ]; then
-            echo "::error::CURSEFORGE_API_TOKEN secret is required for packwiz mr export"
-            exit 1
-          fi
+          echo "::warning::Skipping modpack export and dependency checks because CURSEFORGE_API_TOKEN is not configured."
 
       - name: Set up Go
+        if: env.PACKWIZ_CURSEFORGE_API_TOKEN != ''
         uses: actions/setup-go@v5
         with:
           go-version: stable
 
       - name: Set up Python
+        if: env.PACKWIZ_CURSEFORGE_API_TOKEN != ''
         uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
       - name: Install packwiz
+        if: env.PACKWIZ_CURSEFORGE_API_TOKEN != ''
         run: |
           go install github.com/packwiz/packwiz@latest
           echo "$HOME/go/bin" >> "$GITHUB_PATH"
           "$HOME/go/bin/packwiz" --help >/dev/null
 
       - name: Export Modrinth pack
+        if: env.PACKWIZ_CURSEFORGE_API_TOKEN != ''
         run: |
           packwiz mr export -o "$RUNNER_TEMP/modpack.mrpack"
 
       - name: Unpack exported modpack
+        if: env.PACKWIZ_CURSEFORGE_API_TOKEN != ''
         run: |
           mkdir -p "$RUNNER_TEMP/modpack-unpacked"
           python - <<'PY'
@@ -58,6 +61,7 @@ jobs:
           PY
 
       - name: Collect jars from CurseForge and Modrinth
+        if: env.PACKWIZ_CURSEFORGE_API_TOKEN != ''
         run: |
           python - <<'PY'
           import json
@@ -96,6 +100,7 @@ jobs:
           PY
 
       - name: Install dependency checker tool requirements
+        if: env.PACKWIZ_CURSEFORGE_API_TOKEN != ''
         run: |
           python -m pip install --upgrade pip
           python -m pip install toml prettytable
@@ -103,10 +108,12 @@ jobs:
             https://raw.githubusercontent.com/stevenjwheeler/Minecraft-Mod-Dependency-Checker/main/run.py
 
       - name: Run dependency checker tool
+        if: env.PACKWIZ_CURSEFORGE_API_TOKEN != ''
         run: |
           printf '%s\n' "$RUNNER_TEMP/collected-mods" | python "$RUNNER_TEMP/minecraft-mod-dependency-checker.py"
 
       - name: Fail on missing required dependencies
+        if: env.PACKWIZ_CURSEFORGE_API_TOKEN != ''
         run: |
           python - <<'PY'
           import json
