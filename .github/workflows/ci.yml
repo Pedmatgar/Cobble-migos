@@ -1,0 +1,195 @@
+name: Modpack CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  modpack-ci:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      PACKWIZ_MODRINTH_TOKEN: ${{ secrets.MODRINTH_API_TOKEN }}
+      MODRINTH_API_TOKEN: ${{ secrets.MODRINTH_API_TOKEN }}
+      PACKWIZ_CURSEFORGE_API_TOKEN: ${{ secrets.CURSEFORGE_API_TOKEN }}
+      CURSEFORGE_API_TOKEN: ${{ secrets.CURSEFORGE_API_TOKEN }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Ensure required API token is set
+        run: |
+          if [ -z "${PACKWIZ_CURSEFORGE_API_TOKEN}" ]; then
+            echo "::error::CURSEFORGE_API_TOKEN secret is required for packwiz mr export"
+            exit 1
+          fi
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: stable
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install packwiz
+        run: |
+          go install github.com/packwiz/packwiz@latest
+          echo "$HOME/go/bin" >> "$GITHUB_PATH"
+          "$HOME/go/bin/packwiz" --help >/dev/null
+
+      - name: Export Modrinth pack
+        run: |
+          packwiz mr export -o "$RUNNER_TEMP/modpack.mrpack"
+
+      - name: Unpack exported modpack
+        run: |
+          mkdir -p "$RUNNER_TEMP/modpack-unpacked"
+          python - <<'PY'
+          import zipfile
+          import pathlib
+          src = pathlib.Path("${{ runner.temp }}") / "modpack.mrpack"
+          dst = pathlib.Path("${{ runner.temp }}") / "modpack-unpacked"
+          with zipfile.ZipFile(src) as zf:
+              zf.extractall(dst)
+          PY
+
+      - name: Collect jars from CurseForge and Modrinth
+        run: |
+          python - <<'PY'
+          import json
+          import shutil
+          import urllib.request
+          from pathlib import Path
+
+          temp = Path("${{ runner.temp }}")
+          unpacked = temp / "modpack-unpacked"
+          collected = temp / "collected-mods"
+          collected.mkdir(parents=True, exist_ok=True)
+
+          for folder in ("overrides", "client-overrides", "server-overrides"):
+              mods_dir = unpacked / folder / "mods"
+              if mods_dir.exists():
+                  for jar in mods_dir.glob("*.jar"):
+                      shutil.copy2(jar, collected / jar.name)
+
+          index_path = unpacked / "modrinth.index.json"
+          data = json.loads(index_path.read_text(encoding="utf-8"))
+
+          for file_entry in data.get("files", []):
+              path = file_entry.get("path", "")
+              if not path.startswith("mods/"):
+                  continue
+              downloads = file_entry.get("downloads", [])
+              if not downloads:
+                  raise RuntimeError(f"No download URL for {path}")
+              destination = collected / Path(path).name
+              urllib.request.urlretrieve(downloads[0], destination)
+
+          if not any(collected.glob("*.jar")):
+              raise RuntimeError("No mod jars were collected from exported pack")
+
+          print(f"Collected {len(list(collected.glob('*.jar')))} jars for dependency checking")
+          PY
+
+      - name: Install dependency checker tool requirements
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install toml prettytable
+          curl -fsSL -o "$RUNNER_TEMP/minecraft-mod-dependency-checker.py" \
+            https://raw.githubusercontent.com/stevenjwheeler/Minecraft-Mod-Dependency-Checker/main/run.py
+
+      - name: Run dependency checker tool
+        run: |
+          printf '%s\n' "$RUNNER_TEMP/collected-mods" | python "$RUNNER_TEMP/minecraft-mod-dependency-checker.py"
+
+      - name: Fail on missing required dependencies
+        run: |
+          python - <<'PY'
+          import json
+          import re
+          import sys
+          import zipfile
+          from pathlib import Path
+
+          try:
+              import tomllib
+          except ModuleNotFoundError:  # pragma: no cover
+              import tomli as tomllib
+
+          jars_dir = Path("${{ runner.temp }}") / "collected-mods"
+          ignore = {
+              "minecraft",
+              "java",
+              "fabricloader",
+              "fabric",
+              "forge",
+              "neoforge",
+              "quilt_loader",
+          }
+
+          provided = set()
+          required = {}
+
+          def should_ignore(dep_name: str) -> bool:
+              lowered = dep_name.strip().lower()
+              return lowered in ignore or lowered.startswith("fabric-api")
+
+          for jar in jars_dir.glob("*.jar"):
+              with zipfile.ZipFile(jar) as zf:
+                  entries = zf.namelist()
+
+                  fabric_meta = [name for name in entries if name.endswith("fabric.mod.json")]
+                  for meta_name in fabric_meta:
+                      data = json.loads(zf.read(meta_name).decode("utf-8"))
+                      mod_id = data.get("id")
+                      if mod_id:
+                          provided.add(mod_id)
+                      depends = data.get("depends", {})
+                      for dep_name in depends.keys():
+                          if should_ignore(dep_name):
+                              continue
+                          required.setdefault(mod_id or jar.name, set()).add(dep_name)
+
+                  toml_meta = [name for name in entries if name.endswith("mods.toml")]
+                  for meta_name in toml_meta:
+                      data = tomllib.loads(zf.read(meta_name).decode("utf-8"))
+                      mods = data.get("mods", [])
+                      mod_id = mods[0].get("modId") if mods else None
+                      if mod_id:
+                          provided.add(mod_id)
+
+                      dependencies = data.get("dependencies", {})
+                      dep_sections = []
+                      if isinstance(dependencies, dict):
+                          for section in dependencies.values():
+                              if isinstance(section, list):
+                                  dep_sections.extend(section)
+                      elif isinstance(dependencies, list):
+                          dep_sections.extend(dependencies)
+
+                      for dep in dep_sections:
+                          dep_name = dep.get("modId") if isinstance(dep, dict) else None
+                          if not dep_name or should_ignore(dep_name):
+                              continue
+                          mandatory = dep.get("mandatory", True)
+                          if mandatory:
+                              required.setdefault(mod_id or jar.name, set()).add(dep_name)
+
+          missing = {
+              mod: sorted(dep for dep in deps if dep not in provided)
+              for mod, deps in required.items()
+          }
+          missing = {mod: deps for mod, deps in missing.items() if deps}
+
+          if missing:
+              print("Missing required dependencies detected:")
+              for mod, deps in sorted(missing.items()):
+                  print(f"- {mod}: {', '.join(deps)}")
+              sys.exit(1)
+
+          print("No missing required dependencies detected.")
+          PY
