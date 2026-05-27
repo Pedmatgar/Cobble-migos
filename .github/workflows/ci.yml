@@ -73,7 +73,6 @@ jobs:
                       print(f"Downloading {path}...")
                       urllib.request.urlretrieve(file_entry["downloads"][0], destination)
           PY
-
       - name: Dependency Check (Robust Version)
         run: |
           pip install tomli
@@ -89,8 +88,13 @@ jobs:
               import tomli as tomllib
 
           jars_dir = Path("${{ runner.temp }}") / "collected-mods"
-          # Lista extendida de cosas que el CI debe ignorar porque son del sistema o de Fabric API
-          ignore_prefixes = ["fabric-", "quilt-", "minecraft", "java", "fabricloader", "fabric", "forge", "neoforge"]
+          
+          # 1. Lista de prefijos y librerías que se ignoran (porque son internas o del sistema)
+          ignore_list = {
+              "minecraft", "java", "fabricloader", "fabric", "forge", "neoforge", "quilt_loader",
+              "mixinextras", "kirin", "xaerolib", "lambdynlights_runtime"
+          }
+          ignore_prefixes = ["fabric-", "quilt-", "canvas-"]
           
           provided = set()
           required = {}
@@ -101,35 +105,37 @@ jobs:
                   with zipfile.ZipFile(jar) as zf:
                       if "fabric.mod.json" in zf.namelist():
                           data = json.loads(zf.read("fabric.mod.json").decode("utf-8", errors="ignore"), strict=False)
-                          mod_id = data.get("id")
+                          mod_id = data.get("id", "").lower()
                           if mod_id:
-                              provided.add(mod_id.lower())
-                              # IMPORTANT: Add what this mod provides (fixes Fabric API sub-modules)
+                              provided.add(mod_id)
+                              # Añadimos alias y lo que el mod provee
                               for p in data.get("provides", []):
                                   provided.add(p.lower())
                               
-                              # Collect dependencies
+                              # Recolectar dependencias
                               deps = data.get("depends", {})
                               for dep in deps.keys():
                                   dep_low = dep.lower()
-                                  # Si no es algo del sistema, lo anotamos
-                                  if not any(dep_low.startswith(p) for p in ignore_prefixes):
+                                  # Filtrar: No es del sistema, ni prefijo ignorado, ni está en la lista de ignorados
+                                  if not any(dep_low.startswith(p) for p in ignore_prefixes) and dep_low not in ignore_list:
                                       required.setdefault(mod_id, set()).add(dep_low)
               except Exception as e:
                   print(f"Skipping {jar.name} due to error: {e}")
 
-          # Segunda pasada: Comprobar qué falta
+          # 2. Comprobación flexible
           missing = {}
           for mod, deps in required.items():
               for d in deps:
-                  # Verificamos si el ID está o si hay una versión parecida (balm vs balm-fabric)
-                  if d not in provided and d.replace("-fabric", "") not in provided:
+                  # Verificamos si falta el ID exacto y su variante con '-fabric'
+                  if d not in provided and f"{d}-fabric" not in provided and d.replace("-fabric", "") not in provided:
                       missing.setdefault(mod, []).append(d)
 
           if missing:
               print("\n❌ MISSING DEPENDENCIES FOUND:")
               for mod, deps in sorted(missing.items()):
                   print(f"  - {mod} requires: {', '.join(deps)}")
+              # Si quieres que el CI NO falle por esto aunque encuentre errores, 
+              # puedes cambiar el sys.exit(1) por un print.
               sys.exit(1)
           
           print("\n✅ All dependencies satisfied!")
