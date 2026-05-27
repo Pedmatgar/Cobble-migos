@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".github/workflows/copilot-setup-steps.yml"
+hash = "de230a2a9318bdd6bbcb435b93f3906d653b8a75d003c5fc102c54326df4b078"
+
+[[files]]
 file = "config/craftpresence.json"
 hash = "b881219ef43dcbdb342d3c2c09c268847adbc369e9b8337dce5d1cb80624aaf4"
 
@@ -183,10 +187,6 @@ hash = "f7b6125de1e267744e311629ac0e683717288ed0d94fa9de78d5126c82e04a4b"
 [[files]]
 file = "config/openloader/options.json"
 hash = "a9076d31f99a7c047a0312f28ab47b6238efd759be1bf5e1a8d72dccf7228368"
-
-[[files]]
-file = "config/openloader/resources/Cobblemon-Tips-2.0.zip"
-hash = "4b235f857e98840111f1fbb7f28996ff057b2f6e445aae34e377f8ce33a4a9f5"
 
 [[files]]
 file = "config/yosbr/config/ali/ali_common.json"
@@ -9905,6 +9905,11 @@ hash = "990f8363ccc2e08afd4abc86997c42bc4f0b9058c45958080a725da650c4c551"
 metafile = true
 
 [[files]]
+file = "mods/indium.pw.toml"
+hash = "9e4c53fb1fda9be64935604adcdd3434a78ca27fefc71111f6dc37e4787ef2a6"
+metafile = true
+
+[[files]]
 file = "mods/invmove.pw.toml"
 hash = "ac595381310fefa95b5592b376bc46978bee6dcf839f4a8ff67d168bbbabb887"
 metafile = true
@@ -10114,6 +10119,11 @@ hash = "be9c0a0671d89b53345d45447db05cb47f0e40bdeb416c81be7d0ef63d65516a"
 metafile = true
 
 [[files]]
+file = "mods/toms-storage.pw.toml"
+hash = "9c7364e62fa7f1ed35d21b882c133e77c48101e285035e2451d3bec431f20569"
+metafile = true
+
+[[files]]
 file = "mods/tooltipfix.pw.toml"
 hash = "a9b60e8434424b2c10e0de9b5d3ab98325b10df2dd9e6aed82e8d7828c981b9f"
 metafile = true
@@ -10162,7 +10172,3 @@ metafile = true
 file = "resourcepacks/motschens-better-leaves.pw.toml"
 hash = "8b6513ec92d66dd68550908ac173700f2ed22fb88dcad71709a11b437db3793b"
 metafile = true
-
-[[files]]
-file = "shaderpacks/ComplementaryReimagined_r5.7.1.zip"
-hash = "24a20634a7832d422d3cd5023be16829f26840e25c69404dd418306ea79f63f0"
