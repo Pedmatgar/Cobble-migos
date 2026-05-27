@@ -35,12 +35,11 @@ jobs:
           echo "$HOME/go/bin" >> "$GITHUB_PATH"
 
       - name: Export Modrinth pack
-        if: env.PACKWIZ_CURSEFORGE_API_TOKEN != ''
         run: |
+          # Solo exportamos si tenemos el token de CurseForge o si no hay mods de CF
           packwiz mr export -o "$RUNNER_TEMP/modpack.mrpack"
 
       - name: Unpack and Collect Jars
-        if: env.PACKWIZ_CURSEFORGE_API_TOKEN != ''
         run: |
           python - <<'PY'
           import zipfile
@@ -55,31 +54,28 @@ jobs:
           collected = temp / "collected-mods"
           collected.mkdir(parents=True, exist_ok=True)
 
-          # 1. Unpack
           with zipfile.ZipFile(mrpack) as zf:
               zf.extractall(unpacked)
 
-          # 2. Collect overrides
           for folder in ("overrides", "client-overrides", "server-overrides"):
               mods_dir = unpacked / folder / "mods"
               if mods_dir.exists():
                   for jar in mods_dir.glob("*.jar"):
                       shutil.copy2(jar, collected / jar.name)
 
-          # 3. Download from index
           index_path = unpacked / "modrinth.index.json"
           data = json.loads(index_path.read_text(encoding="utf-8"))
           for file_entry in data.get("files", []):
               path = file_entry.get("path", "")
               if path.startswith("mods/"):
                   destination = collected / Path(path).name
-                  urllib.request.urlretrieve(file_entry["downloads"][0], destination)
+                  if not destination.exists():
+                      print(f"Downloading {path}...")
+                      urllib.request.urlretrieve(file_entry["downloads"][0], destination)
           PY
 
       - name: Dependency Check (Robust Version)
-        if: env.PACKWIZ_CURSEFORGE_API_TOKEN != ''
         run: |
-          # Instalamos tomli para compatibilidad si fuera necesario
           pip install tomli
           python - <<'PY'
           import json
@@ -93,43 +89,46 @@ jobs:
               import tomli as tomllib
 
           jars_dir = Path("${{ runner.temp }}") / "collected-mods"
-          ignore = {"minecraft", "java", "fabricloader", "fabric", "forge", "neoforge", "quilt_loader"}
+          # Lista extendida de cosas que el CI debe ignorar porque son del sistema o de Fabric API
+          ignore_prefixes = ["fabric-", "quilt-", "minecraft", "java", "fabricloader", "fabric", "forge", "neoforge"]
           
           provided = set()
           required = {}
 
+          print("--- Scanning Jars ---")
           for jar in jars_dir.glob("*.jar"):
               try:
                   with zipfile.ZipFile(jar) as zf:
-                      # Buscamos Fabric
                       if "fabric.mod.json" in zf.namelist():
-                          # 'strict=False' evita el error de caracteres de control que viste antes
                           data = json.loads(zf.read("fabric.mod.json").decode("utf-8", errors="ignore"), strict=False)
                           mod_id = data.get("id")
                           if mod_id:
-                              provided.add(mod_id)
-                              for dep in data.get("depends", {}).keys():
-                                  if dep not in ignore and not dep.startswith("fabric-api"):
-                                      required.setdefault(mod_id, set()).add(dep)
-                      
-                      # Buscamos Forge/NeoForge
-                      if "META-INF/mods.toml" in zf.namelist():
-                          data = tomllib.loads(zf.read("META-INF/mods.toml").decode("utf-8", errors="ignore"))
-                          for m in data.get("mods", []):
-                              mid = m.get("modId")
-                              if mid:
-                                  provided.add(mid)
-                                  # Extraer dependencias de Forge es más complejo por su formato, 
-                                  # pero aquí registramos el ID para que otros no fallen.
+                              provided.add(mod_id.lower())
+                              # IMPORTANT: Add what this mod provides (fixes Fabric API sub-modules)
+                              for p in data.get("provides", []):
+                                  provided.add(p.lower())
+                              
+                              # Collect dependencies
+                              deps = data.get("depends", {})
+                              for dep in deps.keys():
+                                  dep_low = dep.lower()
+                                  # Si no es algo del sistema, lo anotamos
+                                  if not any(dep_low.startswith(p) for p in ignore_prefixes):
+                                      required.setdefault(mod_id, set()).add(dep_low)
               except Exception as e:
-                  print(f"Warning: Could not parse {jar.name}: {e}")
+                  print(f"Skipping {jar.name} due to error: {e}")
 
-          missing = {mod: [d for d in deps if d not in provided] for mod, deps in required.items()}
-          missing = {m: d for m, d in missing.items() if d}
+          # Segunda pasada: Comprobar qué falta
+          missing = {}
+          for mod, deps in required.items():
+              for d in deps:
+                  # Verificamos si el ID está o si hay una versión parecida (balm vs balm-fabric)
+                  if d not in provided and d.replace("-fabric", "") not in provided:
+                      missing.setdefault(mod, []).append(d)
 
           if missing:
               print("\n❌ MISSING DEPENDENCIES FOUND:")
-              for mod, deps in missing.items():
+              for mod, deps in sorted(missing.items()):
                   print(f"  - {mod} requires: {', '.join(deps)}")
               sys.exit(1)
           
