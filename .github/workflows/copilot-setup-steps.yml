@@ -16,7 +16,7 @@ jobs:
       contents: read
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4 # Verifica si v5 está disponible o usa v4
 
       - name: Set up Go
         uses: actions/setup-go@v5
@@ -30,12 +30,17 @@ jobs:
           "$HOME/go/bin/packwiz" --help >/dev/null
 
       - name: Expose Modrinth and CurseForge tokens for packwiz
+        # Pasa los secretos a través de 'env' por seguridad
+        env:
+          MODRINTH_SECRET: ${{ secrets.MODRINTH_API_TOKEN }}
+          CURSEFORGE_SECRET: ${{ secrets.CURSEFORGE_API_TOKEN }}
         run: |
-          if [ -n "${{ secrets.MODRINTH_API_TOKEN }}" ]; then
-            echo "PACKWIZ_MODRINTH_TOKEN=${{ secrets.MODRINTH_API_TOKEN }}" >> "$GITHUB_ENV"
-            echo "MODRINTH_API_TOKEN=${{ secrets.MODRINTH_API_TOKEN }}" >> "$GITHUB_ENV"
+          # Lee las variables de entorno nativas en lugar de interpolar
+          if [ -n "$MODRINTH_SECRET" ]; then
+            echo "PACKWIZ_MODRINTH_TOKEN=$MODRINTH_SECRET" >> "$GITHUB_ENV"
+            echo "MODRINTH_API_TOKEN=$MODRINTH_SECRET" >> "$GITHUB_ENV"
           fi
-          if [ -n "${{ secrets.CURSEFORGE_API_TOKEN }}" ]; then
-            echo "PACKWIZ_CURSEFORGE_API_TOKEN=${{ secrets.CURSEFORGE_API_TOKEN }}" >> "$GITHUB_ENV"
-            echo "CURSEFORGE_API_TOKEN=${{ secrets.CURSEFORGE_API_TOKEN }}" >> "$GITHUB_ENV"
+          if [ -n "$CURSEFORGE_SECRET" ]; then
+            echo "PACKWIZ_CURSEFORGE_API_TOKEN=$CURSEFORGE_SECRET" >> "$GITHUB_ENV"
+            echo "CURSEFORGE_API_TOKEN=$CURSEFORGE_SECRET" >> "$GITHUB_ENV"
           fi
