@@ -73,7 +73,7 @@ jobs:
                       print(f"Downloading {path}...")
                       urllib.request.urlretrieve(file_entry["downloads"][0], destination)
           PY
-      - name: Dependency Check (Robust Version)
+      - name: Dependency Check (Ultra-Detailed Version)
         run: |
           pip install tomli
           python - <<'PY'
@@ -89,17 +89,14 @@ jobs:
 
           jars_dir = Path("${{ runner.temp }}") / "collected-mods"
           
-          # 1. Lista de prefijos y librerías que se ignoran (porque son internas o del sistema)
-          ignore_list = {
-              "minecraft", "java", "fabricloader", "fabric", "forge", "neoforge", "quilt_loader",
-              "mixinextras", "kirin", "xaerolib", "lambdynlights_runtime"
-          }
+          # Cosas que ignoramos porque son del sistema o de Fabric API
+          ignore_list = {"minecraft", "java", "fabricloader", "fabric", "forge", "neoforge", "quilt_loader", "mixinextras"}
           ignore_prefixes = ["fabric-", "quilt-", "canvas-"]
           
           provided = set()
           required = {}
 
-          print("--- Scanning Jars ---")
+          print("🔍 STAGE 1: Scanning all installed mods...")
           for jar in jars_dir.glob("*.jar"):
               try:
                   with zipfile.ZipFile(jar) as zf:
@@ -108,35 +105,42 @@ jobs:
                           mod_id = data.get("id", "").lower()
                           if mod_id:
                               provided.add(mod_id)
-                              # Añadimos alias y lo que el mod provee
+                              print(f"  [FOUND] mod_id: '{mod_id}' (from {jar.name})")
+                              
+                              # Añadimos lo que el mod 'provee' (sub-librerías internas)
                               for p in data.get("provides", []):
                                   provided.add(p.lower())
                               
-                              # Recolectar dependencias
+                              # RECOLECTAR DEPENDENCIAS (Depends + Recommends)
+                              # Combinamos ambas secciones para no perder nada
                               deps = data.get("depends", {})
-                              for dep in deps.keys():
+                              recs = data.get("recommends", {})
+                              all_deps = {**deps, **recs} # Prioridad a depends pero incluimos recommends
+                              
+                              for dep in all_deps.keys():
                                   dep_low = dep.lower()
-                                  # Filtrar: No es del sistema, ni prefijo ignorado, ni está en la lista de ignorados
+                                  # Filtrar sistema y fabric-api
                                   if not any(dep_low.startswith(p) for p in ignore_prefixes) and dep_low not in ignore_list:
                                       required.setdefault(mod_id, set()).add(dep_low)
               except Exception as e:
-                  print(f"Skipping {jar.name} due to error: {e}")
+                  print(f"  [WARN] Error reading {jar.name}: {e}")
 
-          # 2. Comprobación flexible
+          print("\n🔍 STAGE 2: Verifying dependencies...")
           missing = {}
           for mod, deps in required.items():
               for d in deps:
-                  # Verificamos si falta el ID exacto y su variante con '-fabric'
-                  if d not in provided and f"{d}-fabric" not in provided and d.replace("-fabric", "") not in provided:
+                  # Verificación flexible (ID exacto, ID con -fabric, o ID quitando -fabric)
+                  variants = {d, f"{d}-fabric", d.replace("-fabric", ""), d.replace("_", "-"), d.replace("-", "_")}
+                  if not any(v in provided for v in variants):
                       missing.setdefault(mod, []).append(d)
 
           if missing:
-              print("\n❌ MISSING DEPENDENCIES FOUND:")
+              print("\n❌ CRITICAL: MISSING DEPENDENCIES DETECTED!")
+              print("The following mods require libraries that are NOT in your modpack:")
               for mod, deps in sorted(missing.items()):
-                  print(f"  - {mod} requires: {', '.join(deps)}")
-              # Si quieres que el CI NO falle por esto aunque encuentre errores, 
-              # puedes cambiar el sys.exit(1) por un print.
+                  print(f"  • Mod '{mod}' needs: {', '.join(deps)}")
+              print("\n💡 Tip: Check if those IDs correspond to mods like 'Aquarius Libs' and add them via packwiz.")
               sys.exit(1)
           
-          print("\n✅ All dependencies satisfied!")
+          print("\n✅ All internal dependencies (including 'recommends') are satisfied!")
           PY
