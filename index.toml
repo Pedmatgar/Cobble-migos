@@ -9724,6 +9724,11 @@ hash = "bdf0dda60aab59a5b721fe6699aee8db22adc1bf015c1290ce0f526c4ec4ff84"
 metafile = true
 
 [[files]]
+file = "mods/animal-garden-common-raven.pw.toml"
+hash = "dd3e00ae8824929e2a58cacbbc5f3b62f60d0ad2f59a90289af7ff052bd414ab"
+metafile = true
+
+[[files]]
 file = "mods/animatica.pw.toml"
 hash = "8cf639c849e6c731af3fba8d8f42fb8aca6e3a9dae102411c38c4c44e6872af7"
 metafile = true
@@ -9731,6 +9736,11 @@ metafile = true
 [[files]]
 file = "mods/appleskin.pw.toml"
 hash = "9ce55dc09b4b2a28b39ae47d146cfe5399dfc74666d9ae53811bdef4058b3491"
+metafile = true
+
+[[files]]
+file = "mods/aquarius-libs.pw.toml"
+hash = "019ffef7d0ba01a4487530487c77af96d08f811d55e2e15b7690323e8d02a220"
 metafile = true
 
 [[files]]

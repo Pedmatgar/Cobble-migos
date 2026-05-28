@@ -1,0 +1,13 @@
+name = "Aquarius Libs"
+filename = "aquariuslibs-1.0.1b-fabric-1.21.1-0.116.7.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/KkHnyaL6/versions/MEj81B0S/aquariuslibs-1.0.1b-fabric-1.21.1-0.116.7.jar"
+hash-format = "sha512"
+hash = "3598a94c6acbdf792497d539441635a53220ff52d8c066ee02303a6375cac53ef7b409f104881b2dea3c7ebb343fa02ac7ada16dbca0a2c7170aa478de81b816"
+
+[update]
+[update.modrinth]
+mod-id = "KkHnyaL6"
+version = "MEj81B0S"
