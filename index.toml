@@ -9899,11 +9899,6 @@ hash = "722f94c721da0889916f43905a5536b2723e4da8a8dc69c592242d8e181ae1a8"
 metafile = true
 
 [[files]]
-file = "mods/fancymenu.pw.toml"
-hash = "ef3a44cb8b521b310967258190e079bcdd5b12ac492149f698e9c5b5a2452221"
-metafile = true
-
-[[files]]
 file = "mods/fastquit.pw.toml"
 hash = "ad68291896e892edafe6d0ef625f0e909a01045bc1e25f5e34a0ceb072f42351"
 metafile = true
