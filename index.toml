@@ -9764,18 +9764,8 @@ hash = "d4fb15b2ea7237db7d6886f82e4f00301a10d8cc1f7bbc57cbc1374de44d0a36"
 metafile = true
 
 [[files]]
-file = "mods/better-third-person.pw.toml"
-hash = "9d58379cbe25bdabf408a97e8de3ba1bef123b36382bd892e394c5a744d0c05e"
-metafile = true
-
-[[files]]
 file = "mods/bettergrass.pw.toml"
 hash = "36bcdd95e7ee456baecea6ebc80397bc5e067a6dcfef6b5d39f2ecd36662adf2"
-metafile = true
-
-[[files]]
-file = "mods/bisecthosting-server-integration-menu-fabric.pw.toml"
-hash = "6ac5a2c003a178157560c304143f5026afd30cb5a233b7e22afc2a84f24183e9"
 metafile = true
 
 [[files]]
@@ -9894,11 +9884,6 @@ hash = "0364a64e7f6515dccf92e10512c81178b7afeb1ae031f8024620892769e69313"
 metafile = true
 
 [[files]]
-file = "mods/falling-leaves-fabric.pw.toml"
-hash = "722f94c721da0889916f43905a5536b2723e4da8a8dc69c592242d8e181ae1a8"
-metafile = true
-
-[[files]]
 file = "mods/fastquit.pw.toml"
 hash = "ad68291896e892edafe6d0ef625f0e909a01045bc1e25f5e34a0ceb072f42351"
 metafile = true
@@ -9919,23 +9904,8 @@ hash = "9e4c53fb1fda9be64935604adcdd3434a78ca27fefc71111f6dc37e4787ef2a6"
 metafile = true
 
 [[files]]
-file = "mods/invmove.pw.toml"
-hash = "ac595381310fefa95b5592b376bc46978bee6dcf839f4a8ff67d168bbbabb887"
-metafile = true
-
-[[files]]
-file = "mods/invmovecompats.pw.toml"
-hash = "c5732bb80de9248a43375a6a9d22d71066b4e5ec06d2829c1dbb80d4a84eec47"
-metafile = true
-
-[[files]]
 file = "mods/irisshaders.pw.toml"
 hash = "b31e45972ba08291e168f9d93ed14d679a8799983b7bce7ca38faa795a85bf3a"
-metafile = true
-
-[[files]]
-file = "mods/jei.pw.toml"
-hash = "5b8dfc9b7fda231ecb43ca1185c7f28ef9b4a0ed8c8df411ff7ad7b837817ee2"
 metafile = true
 
 [[files]]
