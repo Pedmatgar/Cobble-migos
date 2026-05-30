@@ -9744,8 +9744,18 @@ hash = "019ffef7d0ba01a4487530487c77af96d08f811d55e2e15b7690323e8d02a220"
 metafile = true
 
 [[files]]
+file = "mods/athena-ctm.pw.toml"
+hash = "fb5deb56a77c8a30f9fbc0c54ba5768bdb6d84c9b94d6de36edfb3076bff94b0"
+metafile = true
+
+[[files]]
 file = "mods/bad-wither-no-cookie.pw.toml"
 hash = "80472ed95c490b2e5a828c769f30a1b4ed2b8c502ac2d0f577f1c838aaf7ec5e"
+metafile = true
+
+[[files]]
+file = "mods/badpackets.pw.toml"
+hash = "6ff12e37227232226f2fe51c0e34386540d417d06c75cb951eac01f8947bea68"
 metafile = true
 
 [[files]]
@@ -9776,6 +9786,11 @@ metafile = true
 [[files]]
 file = "mods/cherished-worlds.pw.toml"
 hash = "17935c045991f1d499aeb9e7fd7b613bc0550d5d2bdbfde54a326671586cb6e1"
+metafile = true
+
+[[files]]
+file = "mods/chipped.pw.toml"
+hash = "a4d21da45c40e8f1e3b76c9855ea3f1c15736cf2b12475e9de3efd05f8f48a8d"
 metafile = true
 
 [[files]]
@@ -9846,6 +9861,11 @@ metafile = true
 [[files]]
 file = "mods/emi.pw.toml"
 hash = "fd2b924a2fc8518fe0195c8aff7cb75e6e3bb6786402117544a3f5d6a36086e9"
+metafile = true
+
+[[files]]
+file = "mods/emoji-type.pw.toml"
+hash = "deb2af943ebcceb5b2d5d50c1c50b9d5921d75d30170dfe1f019a9c1e596ef60"
 metafile = true
 
 [[files]]
@@ -9989,6 +10009,11 @@ hash = "2f48f2b454092408f2653cdd59b6b924788323095880721259c1cabd53c83eac"
 metafile = true
 
 [[files]]
+file = "mods/no-telemetry.pw.toml"
+hash = "c5e7e0a3de03c138f587fc56dca70013978677e0cde2ad19024dc798178a49bd"
+metafile = true
+
+[[files]]
 file = "mods/not-enough-animations.pw.toml"
 hash = "acc5199aefdbb418065cf4f3554693fcf9797dc1851a36ca7bad9e660b127763"
 metafile = true
@@ -10031,6 +10056,11 @@ metafile = true
 [[files]]
 file = "mods/reeses-sodium-options.pw.toml"
 hash = "2494505990ebe04a740fbae936efdf4d24a52071c04d3b73d215b9539e59817b"
+metafile = true
+
+[[files]]
+file = "mods/resourceful-lib.pw.toml"
+hash = "d3f633dd12cd039a4e58dd398d1c80a324b0d78b9da5b3972b69640bfed211ed"
 metafile = true
 
 [[files]]
@@ -10120,6 +10150,11 @@ metafile = true
 [[files]]
 file = "mods/visuality.pw.toml"
 hash = "5d6abaadd99d9e779849c989017e752b93b5ad023d0a51ff84628c4bc22377fb"
+metafile = true
+
+[[files]]
+file = "mods/wthit.pw.toml"
+hash = "f41d4903f05c7aa5b246b2d1ea9673cd354c772e7e9992ec49844c166f94cdd1"
 metafile = true
 
 [[files]]
