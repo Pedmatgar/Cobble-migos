@@ -658,6 +658,11 @@ hash = "8cf639c849e6c731af3fba8d8f42fb8aca6e3a9dae102411c38c4c44e6872af7"
 metafile = true
 
 [[files]]
+file = "mods/anvil-too-expensive.pw.toml"
+hash = "3ca60bc061f572cc9758c563ecc3a85d15b88cce11fa4087bc38bc2337a0b29e"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "9ce55dc09b4b2a28b39ae47d146cfe5399dfc74666d9ae53811bdef4058b3491"
 metafile = true
