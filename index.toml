@@ -1,14 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".github/workflows/ci.yml"
-hash = "5dc0f2cdaae5f8bbd3011945c806590f7595380128777751456e0d7acdf42fd7"
-
-[[files]]
-file = ".github/workflows/copilot-setup-steps.yml"
-hash = "4d7b0332c757049a035452c5ab968b1b7c34341f4004fb7568e0729cbf064240"
-
-[[files]]
 file = "config/craftpresence.json"
 hash = "b881219ef43dcbdb342d3c2c09c268847adbc369e9b8337dce5d1cb80624aaf4"
 
