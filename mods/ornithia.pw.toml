@@ -1,0 +1,13 @@
+name = "Ornithia"
+filename = "ornithia-1.21.1-fabric-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/4vSTarRV/versions/q4vVSJu7/ornithia-1.21.1-fabric-1.0.0.jar"
+hash-format = "sha512"
+hash = "7adb23987303dcd478535836b1c9965b074045302041ea808aaaf2ffcac2d6f712b78f9ddfdf87955916b407a96ab22847339af6ac717b92bff9b841f063e822"
+
+[update]
+[update.modrinth]
+mod-id = "4vSTarRV"
+version = "q4vVSJu7"
