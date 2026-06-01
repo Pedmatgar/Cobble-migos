@@ -78,6 +78,7 @@ jobs:
           pip install tomli
           python - <<'PY'
           import json
+          import re
           import sys
           import zipfile
           from pathlib import Path
@@ -88,55 +89,181 @@ jobs:
               import tomli as tomllib
 
           jars_dir = Path("${{ runner.temp }}") / "collected-mods"
-          
-          # 1. Lista de prefijos y librerías que se ignoran (porque son internas o del sistema)
+          pack_toml = Path("pack.toml")
+
           ignore_list = {
-              "minecraft", "java", "fabricloader", "fabric", "forge", "neoforge", "quilt_loader",
+              "java", "fabric", "forge", "neoforge", "quilt_loader",
               "mixinextras", "kirin", "xaerolib", "lambdynlights_runtime"
           }
           ignore_prefixes = ["fabric-", "quilt-", "canvas-"]
-          
-          provided = set()
+
+          provided_versions = {}
           required = {}
+
+          def add_provided(mod_id, version):
+              if not mod_id:
+                  return
+              mod_id = mod_id.lower()
+              provided_versions.setdefault(mod_id, set())
+              if version:
+                  provided_versions[mod_id].add(str(version).strip())
+
+          def _version_parts(version):
+              cleaned = str(version).strip().lower().lstrip("v")
+              cleaned = cleaned.split("+", 1)[0]
+              segments = []
+              for part in cleaned.split("."):
+                  match = re.match(r"(\d+)", part)
+                  segments.append(int(match.group(1)) if match else 0)
+              return tuple(segments)
+
+          def _cmp_versions(a, b):
+              aa = list(_version_parts(a))
+              bb = list(_version_parts(b))
+              max_len = max(len(aa), len(bb))
+              aa.extend([0] * (max_len - len(aa)))
+              bb.extend([0] * (max_len - len(bb)))
+              return (aa > bb) - (aa < bb)
+
+          def _caret_upper(version):
+              parts = list(_version_parts(version)[:3])
+              parts.extend([0] * (3 - len(parts)))
+              if parts[0] != 0:
+                  return f"{parts[0] + 1}.0.0"
+              if parts[1] != 0:
+                  return f"0.{parts[1] + 1}.0"
+              return f"0.0.{parts[2] + 1}"
+
+          def _tilde_upper(version):
+              parts = list(_version_parts(version)[:3])
+              parts.extend([0] * (3 - len(parts)))
+              if len(str(version).strip().split(".")) <= 1:
+                  return f"{parts[0] + 1}.0.0"
+              return f"{parts[0]}.{parts[1] + 1}.0"
+
+          def _match_token(version, token):
+              token = token.strip()
+              if not token or token == "*":
+                  return True
+              if token.endswith((".x", ".X", ".*")):
+                  prefix = token[:-2]
+                  return version == prefix or version.startswith(prefix + ".")
+              if token.startswith("^"):
+                  lower = token[1:].strip()
+                  return _cmp_versions(version, lower) >= 0 and _cmp_versions(version, _caret_upper(lower)) < 0
+              if token.startswith("~"):
+                  lower = token[1:].strip()
+                  return _cmp_versions(version, lower) >= 0 and _cmp_versions(version, _tilde_upper(lower)) < 0
+
+              for operator in (">=", "<=", ">", "<", "==", "="):
+                  if token.startswith(operator):
+                      target = token[len(operator):].strip()
+                      cmp_result = _cmp_versions(version, target)
+                      return {
+                          ">=": cmp_result >= 0,
+                          "<=": cmp_result <= 0,
+                          ">": cmp_result > 0,
+                          "<": cmp_result < 0,
+                          "==": cmp_result == 0,
+                          "=": cmp_result == 0,
+                      }[operator]
+
+              return _cmp_versions(version, token) == 0
+
+          def satisfies(version, constraint):
+              if not constraint:
+                  return True
+              if isinstance(constraint, list):
+                  return any(satisfies(version, c) for c in constraint)
+              if not isinstance(constraint, str):
+                  constraint = str(constraint)
+
+              constraint = constraint.strip()
+              if not constraint or constraint == "*":
+                  return True
+
+              for option in constraint.split("||"):
+                  tokens = [t for t in option.replace(",", " ").split() if t]
+                  if not tokens:
+                      return True
+                  if all(_match_token(version, token) for token in tokens):
+                      return True
+              return False
+
+          def candidate_ids(dep_id):
+              dep_id = dep_id.lower()
+              candidates = {dep_id}
+              if dep_id.endswith("-fabric"):
+                  candidates.add(dep_id[:-7])
+              else:
+                  candidates.add(f"{dep_id}-fabric")
+              return candidates
+
+          # Seed providers from pack.toml (loader + MC versions are not jars).
+          pack_data = tomllib.loads(pack_toml.read_text(encoding="utf-8"))
+          versions = pack_data.get("versions", {})
+          add_provided("fabricloader", versions.get("fabric"))
+          add_provided("minecraft", versions.get("minecraft"))
 
           print("--- Scanning Jars ---")
           for jar in jars_dir.glob("*.jar"):
               try:
                   with zipfile.ZipFile(jar) as zf:
-                      if "fabric.mod.json" in zf.namelist():
-                          data = json.loads(zf.read("fabric.mod.json").decode("utf-8", errors="ignore"), strict=False)
-                          mod_id = data.get("id", "").lower()
-                          if mod_id:
-                              provided.add(mod_id)
-                              # Añadimos alias y lo que el mod provee
-                              for p in data.get("provides", []):
-                                  provided.add(p.lower())
-                              
-                              # Recolectar dependencias
-                              deps = data.get("depends", {})
-                              for dep in deps.keys():
-                                  dep_low = dep.lower()
-                                  # Filtrar: No es del sistema, ni prefijo ignorado, ni está en la lista de ignorados
-                                  if not any(dep_low.startswith(p) for p in ignore_prefixes) and dep_low not in ignore_list:
-                                      required.setdefault(mod_id, set()).add(dep_low)
+                      if "fabric.mod.json" not in zf.namelist():
+                          continue
+                      data = json.loads(zf.read("fabric.mod.json").decode("utf-8", errors="ignore"), strict=False)
+                      mod_id = data.get("id", "").lower()
+                      version = data.get("version")
+                      if not mod_id:
+                          continue
+
+                      add_provided(mod_id, version)
+                      for alias in data.get("provides", []):
+                          add_provided(str(alias).lower(), version)
+
+                      deps = data.get("depends", {})
+                      if isinstance(deps, dict):
+                          for dep, constraint in deps.items():
+                              dep_low = str(dep).lower()
+                              if not any(dep_low.startswith(p) for p in ignore_prefixes) and dep_low not in ignore_list:
+                                  required.setdefault(mod_id, []).append((dep_low, constraint))
               except Exception as e:
                   print(f"Skipping {jar.name} due to error: {e}")
 
-          # 2. Comprobación flexible
           missing = {}
+          mismatched = {}
           for mod, deps in required.items():
-              for d in deps:
-                  # Verificamos si falta el ID exacto y su variante con '-fabric'
-                  if d not in provided and f"{d}-fabric" not in provided and d.replace("-fabric", "") not in provided:
-                      missing.setdefault(mod, []).append(d)
+              for dep_id, constraint in deps:
+                  candidates = candidate_ids(dep_id)
+                  versions_found = {
+                      version
+                      for candidate in candidates
+                      for version in provided_versions.get(candidate, set())
+                      if version
+                  }
+                  if not versions_found:
+                      missing.setdefault(mod, []).append(dep_id)
+                      continue
+
+                  if constraint and not any(satisfies(version, constraint) for version in versions_found):
+                      mismatched.setdefault(mod, []).append(
+                          f"{dep_id} (required '{constraint}', found {', '.join(sorted(versions_found))})"
+                      )
 
           if missing:
               print("\n❌ MISSING DEPENDENCIES FOUND:")
               for mod, deps in sorted(missing.items()):
-                  print(f"  - {mod} requires: {', '.join(deps)}")
-              # Si quieres que el CI NO falle por esto aunque encuentre errores, 
-              # puedes cambiar el sys.exit(1) por un print.
+                  print(f"  - {mod} requires: {', '.join(sorted(set(deps)))}")
+
+          if mismatched:
+              print("\n❌ VERSION MISMATCHES FOUND:")
+              for mod, deps in sorted(mismatched.items()):
+                  print(f"  - {mod}:")
+                  for dep in sorted(set(deps)):
+                      print(f"      - {dep}")
+
+          if missing or mismatched:
               sys.exit(1)
-          
-          print("\n✅ All dependencies satisfied!")
+
+          print("\n✅ All dependencies and version constraints satisfied!")
           PY
