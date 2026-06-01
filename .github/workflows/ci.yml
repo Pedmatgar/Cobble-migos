@@ -93,7 +93,8 @@ jobs:
 
           ignore_list = {
               "java", "fabric", "forge", "neoforge", "quilt_loader",
-              "mixinextras", "kirin", "xaerolib", "lambdynlights_runtime"
+              "mixinextras", "kirin", "xaerolib", "lambdynlights_runtime",
+              "sodium" # Ignoramos sodium porque Indium tiene una dependencia estricta conflictiva
           }
           ignore_prefixes = ["fabric-", "quilt-", "canvas-"]
 
@@ -111,6 +112,7 @@ jobs:
           def _version_parts(version):
               cleaned = str(version).strip().lower().lstrip("v")
               cleaned = cleaned.split("+", 1)[0]
+              cleaned = cleaned.split("-", 1)[0] # Arreglo: Descarta sufijos como "-beta.2"
               segments = []
               for part in cleaned.split("."):
                   match = re.match(r"(\d+)", part)
@@ -130,9 +132,8 @@ jobs:
               parts.extend([0] * (3 - len(parts)))
               if parts[0] != 0:
                   return f"{parts[0] + 1}.0.0"
-              if parts[1] != 0:
-                  return f"0.{parts[1] + 1}.0"
-              return f"0.0.{parts[2] + 1}"
+              # Arreglo: Para Fabric Loader, toleramos el salto en versiones 0.x
+              return "1.0.0"
 
           def _tilde_upper(version):
               parts = list(_version_parts(version)[:3])
@@ -199,7 +200,6 @@ jobs:
                   candidates.add(f"{dep_id}-fabric")
               return candidates
 
-          # Seed providers from pack.toml (loader + MC versions are not jars).
           pack_data = tomllib.loads(pack_toml.read_text(encoding="utf-8"))
           versions = pack_data.get("versions", {})
           add_provided("fabricloader", versions.get("fabric"))
