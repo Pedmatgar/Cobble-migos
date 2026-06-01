@@ -748,6 +748,11 @@ hash = "fd9b37c0dd351191944a8ebef602b1f0f35aaeb151dd236f773638bf8b609131"
 metafile = true
 
 [[files]]
+file = "mods/controlling.pw.toml"
+hash = "eecdc8127f69c74ff55fd183d1f1d7d5ef3e714d73845a239fe9e086147a67b1"
+metafile = true
+
+[[files]]
 file = "mods/crafting-tweaks.pw.toml"
 hash = "2e10122f9cadd2d63deb39f37cf1351c9cde85fb50df0d8bc9a7737b233de0dd"
 metafile = true
@@ -1005,6 +1010,11 @@ metafile = true
 [[files]]
 file = "mods/satin-free-wakes.pw.toml"
 hash = "5648f112e21c9cec8400201fd62c77e7f535616219b98c360e193223875995e6"
+metafile = true
+
+[[files]]
+file = "mods/searchables.pw.toml"
+hash = "8302da862578554b012b2cfe58a3c1e75b514d09f94d842e7303be41a2157aeb"
 metafile = true
 
 [[files]]
