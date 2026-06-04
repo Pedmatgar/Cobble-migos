@@ -703,6 +703,11 @@ hash = "d4fb15b2ea7237db7d6886f82e4f00301a10d8cc1f7bbc57cbc1374de44d0a36"
 metafile = true
 
 [[files]]
+file = "mods/better-village.pw.toml"
+hash = "e36daad58bfc4d12148e207177bfe2052f4759b6b2bb6beeaeb7d645cae948c6"
+metafile = true
+
+[[files]]
 file = "mods/bettergrass.pw.toml"
 hash = "36bcdd95e7ee456baecea6ebc80397bc5e067a6dcfef6b5d39f2ecd36662adf2"
 metafile = true
@@ -853,6 +858,11 @@ hash = "3aa66d677f5f23ddc8528f0c3243a9cbded0e27ea4b3db089ec0c8deecfb5704"
 metafile = true
 
 [[files]]
+file = "mods/friends-and-foes.pw.toml"
+hash = "0c2f42374022bcbd3b15b6432cca31dda311e2bd26ab5b02f3d036c90c32e399"
+metafile = true
+
+[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "990f8363ccc2e08afd4abc86997c42bc4f0b9058c45958080a725da650c4c551"
 metafile = true
@@ -895,6 +905,11 @@ metafile = true
 [[files]]
 file = "mods/let-me-despawn.pw.toml"
 hash = "0111e250e04a831514a49464405579fb36b4b8b61dc15928e15a2a805dc569a0"
+metafile = true
+
+[[files]]
+file = "mods/library-ferret.pw.toml"
+hash = "25f051961343886c2cae61d1f492b4def35cf606967d159ff82aa651237783b2"
 metafile = true
 
 [[files]]
@@ -1099,6 +1114,11 @@ metafile = true
 [[files]]
 file = "mods/visuality.pw.toml"
 hash = "5d6abaadd99d9e779849c989017e752b93b5ad023d0a51ff84628c4bc22377fb"
+metafile = true
+
+[[files]]
+file = "mods/wits.pw.toml"
+hash = "e7a630e261c40242ea52b16c9b120b8c9d4b0d0339bd6f097f63828e21dd082c"
 metafile = true
 
 [[files]]
