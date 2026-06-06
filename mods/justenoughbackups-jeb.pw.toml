@@ -1,0 +1,13 @@
+name = "Just Enough Backups (JEB)"
+filename = "justenoughbackups-1.0.1.1+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ctV8T1ZK/versions/2Kdl4TIp/justenoughbackups-1.0.1.1%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "c0b59e7384b2bcf92113242a7df0168a755df52ca8a63cd6cb77404488155aaf770cf633fc2e31c57619a953127685f1c1f97b506d6f014a16ce338c40bab532"
+
+[update]
+[update.modrinth]
+mod-id = "ctV8T1ZK"
+version = "2Kdl4TIp"

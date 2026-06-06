@@ -1,0 +1,13 @@
+name = "anyskin"
+filename = "anyskin-0.1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/3d22o2GY/versions/s2Pc6uQh/anyskin-0.1.0.jar"
+hash-format = "sha512"
+hash = "4e20466abf53b3fb390d5e13329a60b10e8c4921c79c0e20e53f8d048ace7417e4156219f851d75b416adbbba75592f926e2dc4c4d613c2848a27bd8328f21b7"
+
+[update]
+[update.modrinth]
+mod-id = "3d22o2GY"
+version = "s2Pc6uQh"

@@ -663,6 +663,11 @@ hash = "3ca60bc061f572cc9758c563ecc3a85d15b88cce11fa4087bc38bc2337a0b29e"
 metafile = true
 
 [[files]]
+file = "mods/anyskin.pw.toml"
+hash = "47f846bdb4db9a2db1cae977137aba53229d760e0b8932839359a070110b188d"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "9ce55dc09b4b2a28b39ae47d146cfe5399dfc74666d9ae53811bdef4058b3491"
 metafile = true
@@ -670,6 +675,11 @@ metafile = true
 [[files]]
 file = "mods/aquarius-libs.pw.toml"
 hash = "019ffef7d0ba01a4487530487c77af96d08f811d55e2e15b7690323e8d02a220"
+metafile = true
+
+[[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "1102440dd2533ba3a154419bb95ff1f81b858201eb0c44d2a2eea486c74e565a"
 metafile = true
 
 [[files]]
@@ -788,6 +798,11 @@ hash = "5868a8995e30323854585e23dd504adfcc0d6362c68992c8491394b410b5c0c0"
 metafile = true
 
 [[files]]
+file = "mods/easyauth.pw.toml"
+hash = "89e18f90b2476b7f9e518cfa237c6daed3091043e3f22db3dd38c2da5b26ede5"
+metafile = true
+
+[[files]]
 file = "mods/emi-enchanting.pw.toml"
 hash = "3bba70ae20cac5df72bddb4ba9e23bd2f39ea3c0f327eda5711cb0d4ae1500b6"
 metafile = true
@@ -848,6 +863,11 @@ hash = "0364a64e7f6515dccf92e10512c81178b7afeb1ae031f8024620892769e69313"
 metafile = true
 
 [[files]]
+file = "mods/fabric-mail.pw.toml"
+hash = "c83ccbd5421724f277741582e4b49d0db124a21bee2a00ff34d9166ba2072c3e"
+metafile = true
+
+[[files]]
 file = "mods/farmers-delight-refabricated.pw.toml"
 hash = "4e94f635510d86d01a94bbc78eb471632ebe203b58b88490a73a785d733e42ed"
 metafile = true
@@ -885,6 +905,11 @@ metafile = true
 [[files]]
 file = "mods/just-enough-effect-descriptions-jeed.pw.toml"
 hash = "de919dd9ecba4ef950d9f2455c4f6db63864bc9992d263e96635e765b00e0b80"
+metafile = true
+
+[[files]]
+file = "mods/justenoughbackups-jeb.pw.toml"
+hash = "77a7c0cdd5025c0f2ebe87fe2b53865edb8bbb00036979d543e34d2687fa3271"
 metafile = true
 
 [[files]]
@@ -975,6 +1000,11 @@ metafile = true
 [[files]]
 file = "mods/not-enough-animations.pw.toml"
 hash = "acc5199aefdbb418065cf4f3554693fcf9797dc1851a36ca7bad9e660b127763"
+metafile = true
+
+[[files]]
+file = "mods/offline-tab-head.pw.toml"
+hash = "aa3c7d531a2deecc10ad3434fc4192fba380d5b1280c24333d349af494d9cc24"
 metafile = true
 
 [[files]]
@@ -1070,6 +1100,11 @@ metafile = true
 [[files]]
 file = "mods/sodium.pw.toml"
 hash = "f73a48751e13380b87296e5b9627c9f6669efda386bd646fd5c499b344570f46"
+metafile = true
+
+[[files]]
+file = "mods/stackdeobf.pw.toml"
+hash = "b97b297fab12e137c58874ae776402cfa29374c8ff50c9f18ef27442b65336e6"
 metafile = true
 
 [[files]]
