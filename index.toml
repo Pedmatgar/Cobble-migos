@@ -988,6 +988,11 @@ hash = "a70105438f11495884d645c716605182185dc49853a0fb85c249cdc9ca20d121"
 metafile = true
 
 [[files]]
+file = "mods/mouse-tweaks.pw.toml"
+hash = "7fc969e77edc3b0b9946b42070fd858349a74555f0cf9648907241af8a3a2d25"
+metafile = true
+
+[[files]]
 file = "mods/netherportalfix.pw.toml"
 hash = "2f48f2b454092408f2653cdd59b6b924788323095880721259c1cabd53c83eac"
 metafile = true
