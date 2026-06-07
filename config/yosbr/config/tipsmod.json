@@ -9,7 +9,7 @@
   },
   "ignored_namespaces": {
     "//": "Tips from an ignored namespace will not be displayed in game.",
-    "value": ["tipsmod"]
+    "value": ["cobblemontips"]
   },
   "ignored_tip_ids": {
     "//": "Adding a tip ID here will prevent it from being displayed.",
@@ -23,7 +23,7 @@
   "default_title": {
     "//": "The default tile to use when rendering a tip.",
     "value": {
-      "translate": "cobblemontips.title.default",
+      "translate": "tipsmod.title.default",
       "underlined": true,
       "color": "yellow",
       "bold": true

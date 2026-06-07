@@ -185,6 +185,10 @@ file = "config/openloader/options.json"
 hash = "a9076d31f99a7c047a0312f28ab47b6238efd759be1bf5e1a8d72dccf7228368"
 
 [[files]]
+file = "config/yosbr/config/MouseTweaks.cfg"
+hash = "11ba09a6771da982f9bdc906cb50b803804ab4d627566c85fc5ce9a7c4a72d68"
+
+[[files]]
 file = "config/yosbr/config/ali/ali_common.json"
 hash = "266212cdb34ba278f92d1bc3f867c87d06775f5299b543175ed768b48ebe09d4"
 
@@ -510,7 +514,7 @@ hash = "9475d8c3f0bc7d3f5c3083ff02d9e651b94fa19a2343b408642896b128b19f7a"
 
 [[files]]
 file = "config/yosbr/config/tipsmod.json"
-hash = "5684d479ee2d0eb82b344957d1fce05b21c3d766045f9e7c7d301f4b1e31e44f"
+hash = "d3fa5eab3c6e94c22f9425f56ef80d1ff77ee90b9a1d46253e2e9a0a5c77b141"
 
 [[files]]
 file = "config/yosbr/config/transition.json"
