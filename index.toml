@@ -781,6 +781,11 @@ hash = "840724c9076c34ea8cbd88090f197cacecba08e9ca86619e596e2536109db444"
 metafile = true
 
 [[files]]
+file = "mods/cobweb.pw.toml"
+hash = "49da1f100b78a8ad75c06dce97631944dfadc3598c0283d0217a80eb0b2e45b5"
+metafile = true
+
+[[files]]
 file = "mods/continuity.pw.toml"
 hash = "fd9b37c0dd351191944a8ebef602b1f0f35aaeb151dd236f773638bf8b609131"
 metafile = true
@@ -892,7 +897,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "b76f6415c73dcf4be3dfae556ecb9a5b2d3361e987997788cfa26a4cc18ed29b"
+hash = "8b055e1997973e615d20848f0c7d0712ebad4aa24ab8a3ee6d9682ea53642309"
 metafile = true
 
 [[files]]
@@ -1136,6 +1141,11 @@ hash = "910b7d375f82f0f733cd90246ba6f67b9a05e9363880163555dc5ffeebff84e0"
 metafile = true
 
 [[files]]
+file = "mods/prometheus-api.pw.toml"
+hash = "edc8b07fa3134ac253eb8ff7dc91d569acc8e66dfe69994119ce6445b75542de"
+metafile = true
+
+[[files]]
 file = "mods/puzzles-lib.pw.toml"
 hash = "ce710a786a9bb121c5f937b342810e4f4c3010cb101dd76d6f1cc1715a62348c"
 metafile = true
@@ -1203,6 +1213,11 @@ metafile = true
 [[files]]
 file = "mods/sodium.pw.toml"
 hash = "f73a48751e13380b87296e5b9627c9f6669efda386bd646fd5c499b344570f46"
+metafile = true
+
+[[files]]
+file = "mods/soul-fire-d.pw.toml"
+hash = "752148c625ca541506677924ea7c4064bf6e632facc5fc357b53a5fee1e20977"
 metafile = true
 
 [[files]]
