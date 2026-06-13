@@ -842,6 +842,11 @@ hash = "f4350b5d0ef34120432b48ffdff89742808967a7582e346d9442ba56b60abf87"
 metafile = true
 
 [[files]]
+file = "mods/enhanced-groups.pw.toml"
+hash = "5c1b16bbf2308c87c81a713cac4b2e6c6796e854d5133281c759759375e02d94"
+metafile = true
+
+[[files]]
 file = "mods/enhancedblockentities.pw.toml"
 hash = "add6231ab8479da7625a44683862906ea1dd6586e75c253e90eac7c082d1e8c2"
 metafile = true
@@ -988,7 +993,7 @@ metafile = true
 
 [[files]]
 file = "mods/modmenu.pw.toml"
-hash = "c2fe9a1900ceb3a6014ccb83344aa4ab5ddf65c8bf660044469c3c90c7ed9010"
+hash = "039336d7458d57f9eed8e8ce7ed8efd7d27f6801b0deffe8102e7883034eabfc"
 metafile = true
 
 [[files]]
@@ -1097,6 +1102,11 @@ hash = "73f89a223ecd0e79a317c7eb7f38aa9950fa624089be48da6357933e7b66f4ae"
 metafile = true
 
 [[files]]
+file = "mods/simple-voice-chat.pw.toml"
+hash = "bf8b9973e815ac011303a45a22df9f3c2b6b6341ff3ba55924633ee02b5b3e28"
+metafile = true
+
+[[files]]
 file = "mods/sodium-extra.pw.toml"
 hash = "898e14275dd5cc187dee2b8f8fc83b4f0cdb56430b7fa64a8055e006d0249ce7"
 metafile = true
@@ -1173,6 +1183,11 @@ metafile = true
 [[files]]
 file = "mods/visuality.pw.toml"
 hash = "5d6abaadd99d9e779849c989017e752b93b5ad023d0a51ff84628c4bc22377fb"
+metafile = true
+
+[[files]]
+file = "mods/voicechat-names.pw.toml"
+hash = "200915aab14935e057262f2635a7e4bbe526865b8b5d55597f1a0199318bf36b"
 metafile = true
 
 [[files]]
