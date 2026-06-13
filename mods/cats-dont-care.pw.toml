@@ -1,0 +1,13 @@
+name = "Cats Don't Care (CDC)"
+filename = "cats-dont-care-1.0.0+1.21.1+fabric.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/OihWKxvL/versions/rCDNA1ju/cats-dont-care-1.0.0%2B1.21.1%2Bfabric.jar"
+hash-format = "sha512"
+hash = "75f1280cd16765aaf17111463f6c75aa509451ea20376a1a5afe05af166111881151dd7ea5d846956812b3c7ca62aaa05caf889011f370d5b3cea9cbd2b1b219"
+
+[update]
+[update.modrinth]
+mod-id = "OihWKxvL"
+version = "rCDNA1ju"

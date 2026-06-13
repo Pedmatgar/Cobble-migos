@@ -1,0 +1,13 @@
+name = "Pearl Optimizer"
+filename = "PearlOptimizer-1.21.X.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/aSymSNSe/versions/THCThYGl/PearlOptimizer-1.21.X.jar"
+hash-format = "sha512"
+hash = "4f13458f3a32f5212794659bffa918ea978d33528df087bae5cf1703576f0bad6e1b84a49060b0b1dc43f7f1f5f57c71a0f2cdfb3eedc59ad8b786122e01fa1f"
+
+[update]
+[update.modrinth]
+mod-id = "aSymSNSe"
+version = "THCThYGl"

@@ -732,6 +732,11 @@ hash = "8c2053d080a7e4f24e5a426aff0feb26d8e795e4aceefa513f9de1935985d1c3"
 metafile = true
 
 [[files]]
+file = "mods/cats-dont-care.pw.toml"
+hash = "2ef5b1a273afd366b62c34a16e4d429926666335fe1ec15274347e428baeea9f"
+metafile = true
+
+[[files]]
 file = "mods/cherished-worlds.pw.toml"
 hash = "17935c045991f1d499aeb9e7fd7b613bc0550d5d2bdbfde54a326671586cb6e1"
 metafile = true
@@ -882,6 +887,11 @@ hash = "4e94f635510d86d01a94bbc78eb471632ebe203b58b88490a73a785d733e42ed"
 metafile = true
 
 [[files]]
+file = "mods/fast-item-frames.pw.toml"
+hash = "bd67ef9f73d699f8afff69dc2309618903211d6ccff65db487e6dd4fcb088885"
+metafile = true
+
+[[files]]
 file = "mods/fastquit.pw.toml"
 hash = "ad68291896e892edafe6d0ef625f0e909a01045bc1e25f5e34a0ceb072f42351"
 metafile = true
@@ -889,6 +899,11 @@ metafile = true
 [[files]]
 file = "mods/ferritecore-fabric.pw.toml"
 hash = "3aa66d677f5f23ddc8528f0c3243a9cbded0e27ea4b3db089ec0c8deecfb5704"
+metafile = true
+
+[[files]]
+file = "mods/forge-config-api-port.pw.toml"
+hash = "238b3ceb4214a682480ce00eefae5d34efa299ff6ff667e4b2f2ed503c6e76ee"
 metafile = true
 
 [[files]]
@@ -932,6 +947,11 @@ hash = "77a7c0cdd5025c0f2ebe87fe2b53865edb8bbb00036979d543e34d2687fa3271"
 metafile = true
 
 [[files]]
+file = "mods/keepthatmusic.pw.toml"
+hash = "f3124bc06c39ababe303cab1671501eb7a404a2625cb95621fd4184a2cd1caa5"
+metafile = true
+
+[[files]]
 file = "mods/konkrete-fabric.pw.toml"
 hash = "c51a2b21847608f50773378886e3503e4ae22b55b8a69cc9bd9016f089f84995"
 metafile = true
@@ -969,6 +989,11 @@ metafile = true
 [[files]]
 file = "mods/lithostitched.pw.toml"
 hash = "6e5414de55320d49308fd8f0b2505355e40bfd422aeaf21ccf62635f45d60513"
+metafile = true
+
+[[files]]
+file = "mods/mace_optimizer.pw.toml"
+hash = "2ab8109c5791eb9fde1b6fecee3028124920ac0d6eb86547e2117315a6acc00a"
 metafile = true
 
 [[files]]
@@ -1057,6 +1082,11 @@ hash = "2f3144812813371860a7cf03df2ca7767915cbbddf616d59ffb63544a750caf0"
 metafile = true
 
 [[files]]
+file = "mods/pearl_optimizer.pw.toml"
+hash = "76d0b0edc32c0ff12d2bff9a5c1e6422d2849f37721baaa536f87c92735579de"
+metafile = true
+
+[[files]]
 file = "mods/platform.pw.toml"
 hash = "8cb5acf3694b7d37e7ae96dd1aa60fcc045e1786e642abb245aa9618d62dce8e"
 metafile = true
@@ -1069,6 +1099,11 @@ metafile = true
 [[files]]
 file = "mods/prickle.pw.toml"
 hash = "910b7d375f82f0f733cd90246ba6f67b9a05e9363880163555dc5ffeebff84e0"
+metafile = true
+
+[[files]]
+file = "mods/puzzles-lib.pw.toml"
+hash = "ce710a786a9bb121c5f937b342810e4f4c3010cb101dd76d6f1cc1715a62348c"
 metafile = true
 
 [[files]]
@@ -1099,6 +1134,11 @@ metafile = true
 [[files]]
 file = "mods/shulkerboxtooltip.pw.toml"
 hash = "73f89a223ecd0e79a317c7eb7f38aa9950fa624089be48da6357933e7b66f4ae"
+metafile = true
+
+[[files]]
+file = "mods/silicons.pw.toml"
+hash = "8d333bd094965ca5cca15f72fffa8dfed9ff559412af5debcb4a7dc311679ff1"
 metafile = true
 
 [[files]]

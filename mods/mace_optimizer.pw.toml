@@ -1,0 +1,13 @@
+name = "Mace Optimizer"
+filename = "MaceOptimizer-1.21.X.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/1cENlqGZ/versions/b0gZINRv/MaceOptimizer-1.21.X.jar"
+hash-format = "sha512"
+hash = "9ff15562db479f985ff021d8a21a7fb5cf57d469e2f7c36791010e0f7df29b6de640c0823f8f461031317110f652b5971de7f4c542ac0de69b480e7b19dbb10e"
+
+[update]
+[update.modrinth]
+mod-id = "1cENlqGZ"
+version = "b0gZINRv"

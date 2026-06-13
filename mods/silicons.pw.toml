@@ -1,0 +1,13 @@
+name = "Silicon"
+filename = "Silicon-1.21.X.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/MdNZOBlg/versions/Kw2tmyG0/Silicon-1.21.X.jar"
+hash-format = "sha512"
+hash = "3eff8cd06bf1751adfc1af4a5b05f1d1b7a366e66bc28bbe80f2ed10d7d4cf55fe76957f9a7fb0c383eb61639115a0b5a6cea6f34f0ff69892668e27d6afd20b"
+
+[update]
+[update.modrinth]
+mod-id = "MdNZOBlg"
+version = "Kw2tmyG0"
