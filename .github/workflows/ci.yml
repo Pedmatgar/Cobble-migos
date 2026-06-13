@@ -94,7 +94,7 @@ jobs:
           ignore_list = {
               "java", "fabric", "forge", "neoforge", "quilt_loader",
               "mixinextras", "kirin", "xaerolib", "lambdynlights_runtime",
-              "sodium" # Ignoramos sodium porque Indium tiene una dependencia estricta conflictiva
+              "sodium", # Ignoramos sodium porque Indium tiene una dependencia estricta conflictiva
               "voicechat_api"
           }
           ignore_prefixes = ["fabric-", "quilt-", "canvas-"]
