@@ -863,7 +863,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "0364a64e7f6515dccf92e10512c81178b7afeb1ae031f8024620892769e69313"
+hash = "b76f6415c73dcf4be3dfae556ecb9a5b2d3361e987997788cfa26a4cc18ed29b"
 metafile = true
 
 [[files]]
@@ -889,6 +889,16 @@ metafile = true
 [[files]]
 file = "mods/friends-and-foes.pw.toml"
 hash = "0c2f42374022bcbd3b15b6432cca31dda311e2bd26ab5b02f3d036c90c32e399"
+metafile = true
+
+[[files]]
+file = "mods/geckolib.pw.toml"
+hash = "95499bb1cfcbfc2a2e2734a7034de0f35c17058048866fdf17fc3a241d9f689e"
+metafile = true
+
+[[files]]
+file = "mods/ghost.pw.toml"
+hash = "78e6579f089cecddb5d5d8e037b02974966a43f4d5e289b110c089c2642e1ca8"
 metafile = true
 
 [[files]]
