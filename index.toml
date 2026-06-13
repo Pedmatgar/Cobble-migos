@@ -1072,6 +1072,11 @@ hash = "59f3b2e1679e710e694b04e712b2f79be11ec4f1591d831c3adaa86e16d0c1ef"
 metafile = true
 
 [[files]]
+file = "mods/pandaantidupe.pw.toml"
+hash = "8cd42f1aea714572022377748b82e13bae1b5717ab92b1f665803dc09360d9c6"
+metafile = true
+
+[[files]]
 file = "mods/particle-rain.pw.toml"
 hash = "e6b97a131f21e98497a0d72d4c40a3d47fdc226ab391c7050d62d26b40e799b8"
 metafile = true
