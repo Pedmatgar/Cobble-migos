@@ -892,6 +892,11 @@ hash = "0c2f42374022bcbd3b15b6432cca31dda311e2bd26ab5b02f3d036c90c32e399"
 metafile = true
 
 [[files]]
+file = "mods/ghost.pw.toml"
+hash = "78e6579f089cecddb5d5d8e037b02974966a43f4d5e289b110c089c2642e1ca8"
+metafile = true
+
+[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "990f8363ccc2e08afd4abc86997c42bc4f0b9058c45958080a725da650c4c551"
 metafile = true
@@ -1173,16 +1178,6 @@ metafile = true
 [[files]]
 file = "mods/wthit.pw.toml"
 hash = "f41d4903f05c7aa5b246b2d1ea9673cd354c772e7e9992ec49844c166f94cdd1"
-metafile = true
-
-[[files]]
-file = "mods/xaeros-minimap.pw.toml"
-hash = "adcce336daf8cad584e6ec325cc894b8d60020bf24ef6f47d3dbe068f04d1237"
-metafile = true
-
-[[files]]
-file = "mods/xaeros-world-map.pw.toml"
-hash = "c3c4b4fb29a2ea7e0ac239148c9dea89bd291e294988eb8e8679bac7930c7d18"
 metafile = true
 
 [[files]]
