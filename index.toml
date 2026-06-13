@@ -614,7 +614,7 @@ hash = "f02ca95d7246bd4b9c7de895c46108fff42fd5fcf9d56816b7bdba821597b58f"
 
 [[files]]
 file = "config/xaeroworldmap.txt"
-hash = "6028733f967d0d0f6a80dd236d3dcc7d2446912c719ab9a7d3f83d8624d9b92d"
+hash = "ef662ea2d563ea11763da58d3ae25ebde3784a2f982c1d6a5e80b6ac1078e978"
 
 [[files]]
 file = "config/yacl.json5"
@@ -889,11 +889,6 @@ metafile = true
 [[files]]
 file = "mods/friends-and-foes.pw.toml"
 hash = "0c2f42374022bcbd3b15b6432cca31dda311e2bd26ab5b02f3d036c90c32e399"
-metafile = true
-
-[[files]]
-file = "mods/ghost.pw.toml"
-hash = "78e6579f089cecddb5d5d8e037b02974966a43f4d5e289b110c089c2642e1ca8"
 metafile = true
 
 [[files]]
