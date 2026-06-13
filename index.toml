@@ -5,6 +5,10 @@ file = "config/MouseTweaks.cfg"
 hash = "11ba09a6771da982f9bdc906cb50b803804ab4d627566c85fc5ce9a7c4a72d68"
 
 [[files]]
+file = "config/PandaAntiDupe.json"
+hash = "1d9c8c8ba761efebb6bc5a9cf2bcd020a28e1c43d30908f6a1cd705e8b965892"
+
+[[files]]
 file = "config/ali/ali_common.json"
 hash = "266212cdb34ba278f92d1bc3f867c87d06775f5299b543175ed768b48ebe09d4"
 
@@ -697,6 +701,11 @@ hash = "80472ed95c490b2e5a828c769f30a1b4ed2b8c502ac2d0f577f1c838aaf7ec5e"
 metafile = true
 
 [[files]]
+file = "mods/badoptimizations.pw.toml"
+hash = "dd56ff2bcc4253d1d70c08333632743fb56cdc4cf5518dc6afc024164633145d"
+metafile = true
+
+[[files]]
 file = "mods/badpackets.pw.toml"
 hash = "6ff12e37227232226f2fe51c0e34386540d417d06c75cb951eac01f8947bea68"
 metafile = true
@@ -749,6 +758,11 @@ metafile = true
 [[files]]
 file = "mods/cit-resewn.pw.toml"
 hash = "d56a650e6a901b9e84052229a90662b507dda74df65285d3d6ae2a8c71fd9975"
+metafile = true
+
+[[files]]
+file = "mods/clean-trims.pw.toml"
+hash = "29fd96dc9841643ae3af693b5db1b3d63940c2fd7300a22d77e18bebb76cec1b"
 metafile = true
 
 [[files]]
@@ -809,6 +823,11 @@ metafile = true
 [[files]]
 file = "mods/easyauth.pw.toml"
 hash = "89e18f90b2476b7f9e518cfa237c6daed3091043e3f22db3dd38c2da5b26ede5"
+metafile = true
+
+[[files]]
+file = "mods/elevatormod.pw.toml"
+hash = "9bef602ef888f741dbd48091fe188697619acb29b9f57cadb9a0dc5b3fe55529"
 metafile = true
 
 [[files]]
@@ -922,6 +941,11 @@ hash = "78e6579f089cecddb5d5d8e037b02974966a43f4d5e289b110c089c2642e1ca8"
 metafile = true
 
 [[files]]
+file = "mods/hang-glider.pw.toml"
+hash = "5e191142156533f1d94eb828787929c8dffb5dd441b2eb1905e2a9d4845a3d83"
+metafile = true
+
+[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "990f8363ccc2e08afd4abc86997c42bc4f0b9058c45958080a725da650c4c551"
 metafile = true
@@ -989,6 +1013,11 @@ metafile = true
 [[files]]
 file = "mods/lithostitched.pw.toml"
 hash = "6e5414de55320d49308fd8f0b2505355e40bfd422aeaf21ccf62635f45d60513"
+metafile = true
+
+[[files]]
+file = "mods/lumiereplay.pw.toml"
+hash = "f97e40445680532ba36337476e5566a5459c2d02b258d443ff8eb60b9691de11"
 metafile = true
 
 [[files]]

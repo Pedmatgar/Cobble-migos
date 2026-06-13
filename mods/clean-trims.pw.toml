@@ -1,0 +1,13 @@
+name = "Clean Your Trims"
+filename = "clean_trims-1.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/jmv6vmGJ/versions/imwYjrwt/clean_trims-1.2.jar"
+hash-format = "sha512"
+hash = "4e9dea0fb4909e27f5ffeccd5f5cf4ef9081a5515805af9b04a601af952e8c02be40bc2a54dc5646e38b790be81c366491ce1555f7aa92b521afad18c518a55a"
+
+[update]
+[update.modrinth]
+mod-id = "jmv6vmGJ"
+version = "imwYjrwt"
