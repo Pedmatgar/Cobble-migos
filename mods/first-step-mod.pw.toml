@@ -1,0 +1,13 @@
+name = "First Steps"
+filename = "first-steps-0.91.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/98tY8ITu/versions/Osupe7AD/first-steps-0.91.jar"
+hash-format = "sha512"
+hash = "f070f82aca0517fa81c7733074dc50bb931163dc25f3077f2ea62de2e07b4ee0309d37e4480fd27d0df9e5164603b393dda2cfcaa7fc9d847271244a67aac6bc"
+
+[update]
+[update.modrinth]
+mod-id = "98tY8ITu"
+version = "Osupe7AD"

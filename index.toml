@@ -716,6 +716,11 @@ hash = "3e020f352ab64f88d0bbbee740ae1784d17b44337c02e2fd670889bbdbfa4a9a"
 metafile = true
 
 [[files]]
+file = "mods/beautiful-enchanted-books-mod-edition.pw.toml"
+hash = "f6ca3332ac86db6c3108c2f8c98da238ed8f119ca3c87b5b014e261d0bcd3f07"
+metafile = true
+
+[[files]]
 file = "mods/better-advancements.pw.toml"
 hash = "00f223fda7198f380360967e58208b3edd27de8f00e312c7294e669ffa075c14"
 metafile = true
@@ -738,6 +743,11 @@ metafile = true
 [[files]]
 file = "mods/bookshelf.pw.toml"
 hash = "8c2053d080a7e4f24e5a426aff0feb26d8e795e4aceefa513f9de1935985d1c3"
+metafile = true
+
+[[files]]
+file = "mods/bundle-pins.pw.toml"
+hash = "ab46e199edeec40be9257af33b82ca2402625ba4fce0722274623bd2f919dc9b"
 metafile = true
 
 [[files]]
@@ -796,6 +806,11 @@ hash = "eecdc8127f69c74ff55fd183d1f1d7d5ef3e714d73845a239fe9e086147a67b1"
 metafile = true
 
 [[files]]
+file = "mods/cosy-critters.pw.toml"
+hash = "1a8eb844ce02cd38a4fd550c219a8251b8a095aa7737402ab02e74cb0d425ad3"
+metafile = true
+
+[[files]]
 file = "mods/crafting-tweaks.pw.toml"
 hash = "2e10122f9cadd2d63deb39f37cf1351c9cde85fb50df0d8bc9a7737b233de0dd"
 metafile = true
@@ -838,6 +853,11 @@ metafile = true
 [[files]]
 file = "mods/economical-villager-trading.pw.toml"
 hash = "0522425da4b2d7b99fe9cbffbc10b31e729413b0df59c02964029b0d2fe9529f"
+metafile = true
+
+[[files]]
+file = "mods/effortless-building.pw.toml"
+hash = "2fe3ff82d4eee03412655d1c9c1c117c63a15187617c68f3139eaaceffa9a670"
 metafile = true
 
 [[files]]
@@ -933,6 +953,11 @@ metafile = true
 [[files]]
 file = "mods/ferritecore-fabric.pw.toml"
 hash = "3aa66d677f5f23ddc8528f0c3243a9cbded0e27ea4b3db089ec0c8deecfb5704"
+metafile = true
+
+[[files]]
+file = "mods/first-step-mod.pw.toml"
+hash = "db9132a1c74b5585081eb027348cfd92db40f05c886d63cd5aa9c4c61547ec61"
 metafile = true
 
 [[files]]

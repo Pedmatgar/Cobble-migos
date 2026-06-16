@@ -1,0 +1,13 @@
+name = "Bundle Pins"
+filename = "bundlepins-1.1+1.21.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/qM8lYVgI/versions/lBFJ3ruZ/bundlepins-1.1%2B1.21.jar"
+hash-format = "sha512"
+hash = "5a90d101acd7d52e35012a90d58e4984db728c4af10086b17b2f071749e46d71587982a6305d2e6556c8bac3bfe0d27012ebccf0bebc19984e71a38eaabd01c0"
+
+[update]
+[update.modrinth]
+mod-id = "qM8lYVgI"
+version = "lBFJ3ruZ"
