@@ -826,8 +826,18 @@ hash = "5868a8995e30323854585e23dd504adfcc0d6362c68992c8491394b410b5c0c0"
 metafile = true
 
 [[files]]
+file = "mods/easy-magic.pw.toml"
+hash = "e7a682a577780a52963a998f6941c13cbd75455a65368e9b665c56efca37cbb6"
+metafile = true
+
+[[files]]
 file = "mods/easyauth.pw.toml"
 hash = "89e18f90b2476b7f9e518cfa237c6daed3091043e3f22db3dd38c2da5b26ede5"
+metafile = true
+
+[[files]]
+file = "mods/economical-villager-trading.pw.toml"
+hash = "0522425da4b2d7b99fe9cbffbc10b31e729413b0df59c02964029b0d2fe9529f"
 metafile = true
 
 [[files]]
@@ -1003,6 +1013,11 @@ metafile = true
 [[files]]
 file = "mods/let-me-despawn.pw.toml"
 hash = "0111e250e04a831514a49464405579fb36b4b8b61dc15928e15a2a805dc569a0"
+metafile = true
+
+[[files]]
+file = "mods/librarians-balance.pw.toml"
+hash = "868dfdb47c873f956732710faabead3c572577d11f4c5a08cfc0466ea25c4b5e"
 metafile = true
 
 [[files]]

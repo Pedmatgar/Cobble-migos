@@ -1,0 +1,13 @@
+name = "Librarian's Balance"
+filename = "librarians-balance-3.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/SoL6FwNo/versions/w9FAXasb/librarians-balance-3.5.jar"
+hash-format = "sha512"
+hash = "568b04b3bfead5d6a420c388460fa5bd45fce024a1457d4c4a029c4f22dd021ac1e50fb372d35e4f4b1f8f1e539f97b71074007cc8aa045c2e690ca19b6f73b5"
+
+[update]
+[update.modrinth]
+mod-id = "SoL6FwNo"
+version = "w9FAXasb"
