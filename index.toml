@@ -73,6 +73,10 @@ file = "config/citresewn.json"
 hash = "1ea03400477ac2075d61ae58cfc573bc78ce954507d090ab69547de279918656"
 
 [[files]]
+file = "config/cosycritters.json"
+hash = "922320a27d06737cf55ed511c803cbd8f0b5c31980b48c5aa61ac960b8d84b40"
+
+[[files]]
 file = "config/craftingtweaks-common.toml"
 hash = "4af862cd0a1c7c379c40c110d5ddea00e211dec005fb09dcee1bfa490b3682b0"
 
@@ -441,6 +445,11 @@ file = "config/openloader/options.json"
 hash = "a9076d31f99a7c047a0312f28ab47b6238efd759be1bf5e1a8d72dccf7228368"
 
 [[files]]
+file = "config/openloader/resources/allthemons.pw.toml"
+hash = "24e843ff2e04d8c59610a6ee195a394511806cfbad1aa0797b0a1e7ce8fe8a52"
+metafile = true
+
+[[files]]
 file = "config/panorama_screens/settings.json"
 hash = "7688da256aa45808262ca17851a80e862511625009d6310e6f72e340c0f03564"
 
@@ -641,6 +650,11 @@ file = "instance.png"
 hash = "efd488c2f003cbd4b7ef9a50a9b56c74fb2ddcb8bd4a6721fdf8eceb7a852cf2"
 
 [[files]]
+file = "mods/accessories.pw.toml"
+hash = "5285ba249b00d0d12a3cd1f64a5536e7618770dee31d3d240f9d4345ef69f888"
+metafile = true
+
+[[files]]
 file = "mods/advanced-loot-info.pw.toml"
 hash = "1acdc752810149339db60b0968ac5578166231d6fda61d2d23aa3caa23b84801"
 metafile = true
@@ -786,8 +800,38 @@ hash = "8924f70537405b8bc884504814f8963483268b492bcad4c6d87badde63ee69e5"
 metafile = true
 
 [[files]]
+file = "mods/cobbledgacha.pw.toml"
+hash = "827068db8669c6736b4269a2b245913cf0004c4b864c3d65fe07ce408fb86627"
+metafile = true
+
+[[files]]
+file = "mods/cobblefurnies.pw.toml"
+hash = "43c4255087127f6707010f05b378f53e1eb20f2eaf0434cdda0438b1a1543265"
+metafile = true
+
+[[files]]
+file = "mods/cobblemon-mega-showdown.pw.toml"
+hash = "dac3735111150e6dee94f69b03ccf6c8f65e2c975421c4f730d9afc70a3f4154"
+metafile = true
+
+[[files]]
+file = "mods/cobblemon-pet-a-poke.pw.toml"
+hash = "d120d2d263c58b242a6cf18fb226357843bb81a8bd5b2eec1996dfa9dfc2ad7c"
+metafile = true
+
+[[files]]
+file = "mods/cobblemon-pokenav.pw.toml"
+hash = "509af72f2ed2559bb3829ed25ea9cbd4eb19b05c0151fa558e15a9936dddf2e4"
+metafile = true
+
+[[files]]
+file = "mods/cobblemon-ranked.pw.toml"
+hash = "f5afe856149c64acae88376695560d5a5711aa12ecc84fb409d88292a9c03f0b"
+metafile = true
+
+[[files]]
 file = "mods/cobblemon.pw.toml"
-hash = "840724c9076c34ea8cbd88090f197cacecba08e9ca86619e596e2536109db444"
+hash = "6413f6c6bef7abc5a808a54111f093a17daf4471e89d8535840f2a24966bdcd4"
 metafile = true
 
 [[files]]
@@ -823,6 +867,11 @@ metafile = true
 [[files]]
 file = "mods/debugify.pw.toml"
 hash = "e3dbc76d36c6fdca359b48d56d179da8399dc928dd1ff4d265041eae0d89c480"
+metafile = true
+
+[[files]]
+file = "mods/disc-workshop.pw.toml"
+hash = "aa5c07d31b7b382080f88ebd7b43c8e45436bf917b3b8053f31735141f4c79cb"
 metafile = true
 
 [[files]]
@@ -1001,6 +1050,11 @@ hash = "b31e45972ba08291e168f9d93ed14d679a8799983b7bce7ca38faa795a85bf3a"
 metafile = true
 
 [[files]]
+file = "mods/jukebox-gui.pw.toml"
+hash = "e2fdbfd80be95d2bcd65b4d899518c1db7863068fedf0cd1fe987903c53b0b64"
+metafile = true
+
+[[files]]
 file = "mods/just-enough-effect-descriptions-jeed.pw.toml"
 hash = "de919dd9ecba4ef950d9f2455c4f6db63864bc9992d263e96635e765b00e0b80"
 metafile = true
@@ -1033,6 +1087,11 @@ metafile = true
 [[files]]
 file = "mods/language-reload.pw.toml"
 hash = "26f3c572aaf4ad0303f12e4fa257cc4f34bc30f3e2ac1d1dc75f44632141876d"
+metafile = true
+
+[[files]]
+file = "mods/legendary-monuments.pw.toml"
+hash = "e1f8a888c24fa3af21d18428471a72ee867321adfda329e31dc3ba555fc0209f"
 metafile = true
 
 [[files]]
@@ -1083,6 +1142,11 @@ metafile = true
 [[files]]
 file = "mods/melody.pw.toml"
 hash = "9cc852c7d5024d24f0403b7f86200d2283a89ffc66896123406102e57318844b"
+metafile = true
+
+[[files]]
+file = "mods/minecraft-transit-railway.pw.toml"
+hash = "0106ffeea4265ddf057436bd3bf0ddc216fee5d9c7f204c81ac932892d0a7992"
 metafile = true
 
 [[files]]
@@ -1163,6 +1227,11 @@ metafile = true
 [[files]]
 file = "mods/pearl_optimizer.pw.toml"
 hash = "76d0b0edc32c0ff12d2bff9a5c1e6422d2849f37721baaa536f87c92735579de"
+metafile = true
+
+[[files]]
+file = "mods/persistent-parrots.pw.toml"
+hash = "812a77feb8f4af7f166178efd63e678db44a8010082c04dbfd56a8c7cf8c502a"
 metafile = true
 
 [[files]]
@@ -1277,6 +1346,11 @@ hash = "0c29ce4166261f3f995a3a9c47753050983662a4086846ed524a1fe2ecd13353"
 [[files]]
 file = "mods/tectonic.pw.toml"
 hash = "17c9b4d78834b4193fb15e251b64dbda0be6f132e005d374a99a92584b1093df"
+metafile = true
+
+[[files]]
+file = "mods/terrablender.pw.toml"
+hash = "e35593590fe988653baebae4638f6c93b5d822351274955cc1288b34fe5429fe"
 metafile = true
 
 [[files]]

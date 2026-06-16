@@ -1,0 +1,13 @@
+name = "Cobblemon Ranked"
+filename = "cobblemon_ranked-v1.4.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/raZWmuaZ/versions/iFgEF9Z8/cobblemon_ranked-v1.4.2.jar"
+hash-format = "sha512"
+hash = "74501e6df08604841092ffd0b6e07fafa9861627751a91a57059c2c5956187ad463bdb1b266f5af4f4a9e0361b026f6768547cf4dec41e623560da1ad12966c5"
+
+[update]
+[update.modrinth]
+mod-id = "raZWmuaZ"
+version = "iFgEF9Z8"

@@ -1,0 +1,13 @@
+name = "Jukebox GUI"
+filename = "jukebox-gui-1.21_1.21.1-3.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/3XrSr7VD/versions/n3hB7GXI/jukebox-gui-1.21_1.21.1-3.0.0.jar"
+hash-format = "sha512"
+hash = "54e97e24801498fda0601f4e51631b0666c7dbd619e97809e7e28fe6c93c1664be36ec2b8342091dc69b923a4dd680a2e25d23e1281a431180e5ef7e7b4ea1d3"
+
+[update]
+[update.modrinth]
+mod-id = "3XrSr7VD"
+version = "n3hB7GXI"

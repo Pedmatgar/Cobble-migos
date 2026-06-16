@@ -1,0 +1,13 @@
+name = "Disc Workshop"
+filename = "discworkshop-1.0.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ZPofcqvS/versions/zzm4XWFH/discworkshop-1.0.4.jar"
+hash-format = "sha512"
+hash = "ae16ed76fee3a79b94d8b526cc5899df7b290f32ef5c01cb49e4cb6ca23a08b164de8910f59bef24717855e5d89ea264a02d8e5caeae11431b25ab7e3697e48c"
+
+[update]
+[update.modrinth]
+mod-id = "ZPofcqvS"
+version = "zzm4XWFH"
