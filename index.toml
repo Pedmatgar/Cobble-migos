@@ -74,7 +74,7 @@ hash = "1ea03400477ac2075d61ae58cfc573bc78ce954507d090ab69547de279918656"
 
 [[files]]
 file = "config/cosycritters.json"
-hash = "922320a27d06737cf55ed511c803cbd8f0b5c31980b48c5aa61ac960b8d84b40"
+hash = "82007b9497e7205b37d0a8e6e6d146c62f197e3da73d5af013dd5e9e1be48928"
 
 [[files]]
 file = "config/craftingtweaks-common.toml"
@@ -526,6 +526,10 @@ file = "config/stendhal/stendhal.properties"
 hash = "9475d8c3f0bc7d3f5c3083ff02d9e651b94fa19a2343b408642896b128b19f7a"
 
 [[files]]
+file = "config/tectonic.json"
+hash = "28fd44d528e127eddb802b656cb7a8ccc44e41cda0624acb735a95b366c2205e"
+
+[[files]]
 file = "config/tipsmod.json"
 hash = "d3fa5eab3c6e94c22f9425f56ef80d1ff77ee90b9a1d46253e2e9a0a5c77b141"
 
@@ -785,6 +789,11 @@ hash = "29fd96dc9841643ae3af693b5db1b3d63940c2fd7300a22d77e18bebb76cec1b"
 metafile = true
 
 [[files]]
+file = "mods/clifftree.pw.toml"
+hash = "56c22d19d851935a00ba8c65fcde2ffb2c57e508d3c1d3385e87a42547fecb16"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "9e21cc4fae5ed88e306b4601c5e1533f883aa8b60c6e36dedeec82718be87059"
 metafile = true
@@ -992,6 +1001,11 @@ metafile = true
 [[files]]
 file = "mods/fastquit.pw.toml"
 hash = "ad68291896e892edafe6d0ef625f0e909a01045bc1e25f5e34a0ceb072f42351"
+metafile = true
+
+[[files]]
+file = "mods/feature-recycler.pw.toml"
+hash = "f81a00515975ec07f7ad1d2cafc6419e554e8e07a2ec7be8a29406a41b4b3aed"
 metafile = true
 
 [[files]]
@@ -1231,7 +1245,7 @@ metafile = true
 
 [[files]]
 file = "mods/platform.pw.toml"
-hash = "8cb5acf3694b7d37e7ae96dd1aa60fcc045e1786e642abb245aa9618d62dce8e"
+hash = "246e7782ef2cab501af48f56353de9d6a46f3479dcb12f282152eeacd03b7e60"
 metafile = true
 
 [[files]]
@@ -1349,11 +1363,6 @@ hash = "e35593590fe988653baebae4638f6c93b5d822351274955cc1288b34fe5429fe"
 metafile = true
 
 [[files]]
-file = "mods/terralith.pw.toml"
-hash = "0e02e93b9468dca005f7fea385e92612e38bb6807f4dcd64ce7a4b22fac78581"
-metafile = true
-
-[[files]]
 file = "mods/tips.pw.toml"
 hash = "be9c0a0671d89b53345d45447db05cb47f0e40bdeb416c81be7d0ef63d65516a"
 metafile = true
@@ -1375,7 +1384,7 @@ metafile = true
 
 [[files]]
 file = "mods/vanillabackport.pw.toml"
-hash = "03ad9ce2590d5d56c7937e59816a0c31b4c7ad83032a21d5b7942a47f20f1593"
+hash = "0865bcf91d32cd710ac30a282a3c2202816670942c5175f7f475a29aeb3fe19b"
 metafile = true
 
 [[files]]
