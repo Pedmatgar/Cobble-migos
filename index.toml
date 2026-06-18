@@ -646,6 +646,10 @@ file = "config/yosbr/shaderpacks/ComplementaryReimagined_r5.7.1.zip.txt"
 hash = "1c5efbb5f8f5b94696ed9dce56982a994080922fa527e7bdaad68db9241bddd4"
 
 [[files]]
+file = "hola.txt"
+hash = "6f8c38c94ded8fcb8b23e600bd58458c120ed8e00e29855c6ffa13d418d72294"
+
+[[files]]
 file = "icon.png"
 hash = "a01df5ba3c4252ae282cb55e3e2183f3aa83e1bc173e7911b13fdb499e1eba1c"
 
@@ -680,7 +684,7 @@ metafile = true
 
 [[files]]
 file = "mods/animatica.pw.toml"
-hash = "8cf639c849e6c731af3fba8d8f42fb8aca6e3a9dae102411c38c4c44e6872af7"
+hash = "ccabf86379e6ad72c3eaef3abb3827eec2b9ab2b87882cc9bcd309250b99e7ca"
 metafile = true
 
 [[files]]
@@ -745,7 +749,7 @@ metafile = true
 
 [[files]]
 file = "mods/better-ping-display-fabric.pw.toml"
-hash = "d4fb15b2ea7237db7d6886f82e4f00301a10d8cc1f7bbc57cbc1374de44d0a36"
+hash = "41e498514e277ea0dce7c4bcd1144b61a6174436bb9db32d532ac4ce446e9c64"
 metafile = true
 
 [[files]]
@@ -761,6 +765,11 @@ metafile = true
 [[files]]
 file = "mods/bundle-pins.pw.toml"
 hash = "ab46e199edeec40be9257af33b82ca2402625ba4fce0722274623bd2f919dc9b"
+metafile = true
+
+[[files]]
+file = "mods/c2me-fabric.pw.toml"
+hash = "3fec3b665aa3c260075cabf00d04c75c6effd6b7b5f4e5e7a2c043b803d54ed8"
 metafile = true
 
 [[files]]
@@ -876,6 +885,11 @@ metafile = true
 [[files]]
 file = "mods/disc-workshop.pw.toml"
 hash = "aa5c07d31b7b382080f88ebd7b43c8e45436bf917b3b8053f31735141f4c79cb"
+metafile = true
+
+[[files]]
+file = "mods/distanthorizons.pw.toml"
+hash = "a98dd7f86518a0de7bb3451bee7c8e1d7cec1b7fe00d97504ce7afd7e715ae2d"
 metafile = true
 
 [[files]]
@@ -1270,7 +1284,7 @@ metafile = true
 
 [[files]]
 file = "mods/reeses-sodium-options.pw.toml"
-hash = "2494505990ebe04a740fbae936efdf4d24a52071c04d3b73d215b9539e59817b"
+hash = "e877957d6f1698a6709d9cfee71503d2e48fa025586eeff416961ba9740eab67"
 metafile = true
 
 [[files]]
