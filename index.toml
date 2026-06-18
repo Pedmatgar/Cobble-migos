@@ -750,11 +750,6 @@ hash = "e36daad58bfc4d12148e207177bfe2052f4759b6b2bb6beeaeb7d645cae948c6"
 metafile = true
 
 [[files]]
-file = "mods/bettergrass.pw.toml"
-hash = "36bcdd95e7ee456baecea6ebc80397bc5e067a6dcfef6b5d39f2ecd36662adf2"
-metafile = true
-
-[[files]]
 file = "mods/bookshelf.pw.toml"
 hash = "8c2053d080a7e4f24e5a426aff0feb26d8e795e4aceefa513f9de1935985d1c3"
 metafile = true

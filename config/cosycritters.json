@@ -4,7 +4,7 @@
   "maxMoths": 8,
   "maxSpiders": 16,
   "spawnHatman": true,
-  "spawnBird": true,
+  "spawnBird": false,
   "spawnMoth": true,
   "spawnSpider": true,
   "bird": {
@@ -25,7 +25,7 @@
       ],
       "isWhitelist": true
     },
-    "reactionDistance": 10,
+    "reactionDistance": 30,
     "reactionSpeed": 20,
     "despawnDistance": 128,
     "blockAvoidanceDistance": 8,
@@ -35,7 +35,7 @@
     "flockRange": 20,
     "alignment": 0.05,
     "cohesion": 0.001,
-    "maxSpeed": 1.0,
+    "maxSpeed": 1.8,
     "minSpeed": 0.3,
     "maxBehaviourTime": 400,
     "landingResponsiveness": 0.01,
