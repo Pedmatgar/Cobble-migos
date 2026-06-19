@@ -437,6 +437,10 @@ file = "config/moreculling.toml"
 hash = "3ec4f9263c72988bc6490c7d488d5d576c9ebbc4c614f683de3a4772e8e89f0c"
 
 [[files]]
+file = "config/mtr.json"
+hash = "b6ff443b3d35eb0aa6a696739f227e749d6250f2386ccaeb697c74b412456a7c"
+
+[[files]]
 file = "config/notenoughanimations.json"
 hash = "f734f35399f949a79b29328d6d0398027a5e5c4f5ffa15f35a44c8054b54da34"
 
@@ -644,10 +648,6 @@ hash = "3648836f76557db94ea0765e9ad8fa6b1ba6fa987168894cd350e2f17e968ffe"
 [[files]]
 file = "config/yosbr/shaderpacks/ComplementaryReimagined_r5.7.1.zip.txt"
 hash = "1c5efbb5f8f5b94696ed9dce56982a994080922fa527e7bdaad68db9241bddd4"
-
-[[files]]
-file = "hola.txt"
-hash = "6f8c38c94ded8fcb8b23e600bd58458c120ed8e00e29855c6ffa13d418d72294"
 
 [[files]]
 file = "icon.png"
@@ -993,6 +993,11 @@ hash = "1fbcec6fae4237b80bf2becfc06fb52a49512821f402b5928b1e2533c73b3142"
 metafile = true
 
 [[files]]
+file = "mods/envelope.pw.toml"
+hash = "4ccdf7955736d928aa5dcf44e1635163e9638123ee9da2a29fc5e485a1f4601f"
+metafile = true
+
+[[files]]
 file = "mods/fabric-api.pw.toml"
 hash = "8b055e1997973e615d20848f0c7d0712ebad4aa24ab8a3ee6d9682ea53642309"
 metafile = true
@@ -1019,7 +1024,7 @@ metafile = true
 
 [[files]]
 file = "mods/feature-recycler.pw.toml"
-hash = "f81a00515975ec07f7ad1d2cafc6419e554e8e07a2ec7be8a29406a41b4b3aed"
+hash = "44585a96c17bd2881466d61a1e975e61c489fa327e279d8f8bcb45c248836ef3"
 metafile = true
 
 [[files]]
@@ -1414,6 +1419,11 @@ metafile = true
 [[files]]
 file = "mods/voicechat-names.pw.toml"
 hash = "200915aab14935e057262f2635a7e4bbe526865b8b5d55597f1a0199318bf36b"
+metafile = true
+
+[[files]]
+file = "mods/wandering-pets-updated.pw.toml"
+hash = "13b1256c784874959e1fdfbeb0a8c8e6eaa511689792f0f3de994326f3d4e962"
 metafile = true
 
 [[files]]
