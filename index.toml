@@ -1058,6 +1058,11 @@ hash = "5e191142156533f1d94eb828787929c8dffb5dd441b2eb1905e2a9d4845a3d83"
 metafile = true
 
 [[files]]
+file = "mods/horseman.pw.toml"
+hash = "a254a02db1c45f20b01ade79bd89c8ca07f5787886189441cff96acff61d89c6"
+metafile = true
+
+[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "990f8363ccc2e08afd4abc86997c42bc4f0b9058c45958080a725da650c4c551"
 metafile = true
