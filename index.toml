@@ -650,6 +650,10 @@ file = "config/yosbr/shaderpacks/ComplementaryReimagined_r5.7.1.zip.txt"
 hash = "1c5efbb5f8f5b94696ed9dce56982a994080922fa527e7bdaad68db9241bddd4"
 
 [[files]]
+file = "hola.txt"
+hash = "1abac35025d57e2851e7956befc3fb102766c4368f6cdc7bfa7ebb73b53c47f3"
+
+[[files]]
 file = "icon.png"
 hash = "a01df5ba3c4252ae282cb55e3e2183f3aa83e1bc173e7911b13fdb499e1eba1c"
 
@@ -1230,11 +1234,6 @@ metafile = true
 [[files]]
 file = "mods/open-loader.pw.toml"
 hash = "14f53974dd69f97fcbf1baec66345aceeb542e06791d38b9ccc659181c5b0d16"
-metafile = true
-
-[[files]]
-file = "mods/ornithia.pw.toml"
-hash = "6818f5bbd0eeee23aabd93520903e1c912bbd68e6faee4a5b7b80403cd6a7050"
 metafile = true
 
 [[files]]
