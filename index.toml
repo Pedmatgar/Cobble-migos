@@ -686,6 +686,11 @@ hash = "2c187ad51a314cdc033c2dd068815d1b3b6a8995017b570c58bba279066aaa2b"
 metafile = true
 
 [[files]]
+file = "mods/alternate-current.pw.toml"
+hash = "015053563a1d8ef3334560cd27f8e832935a26a96f151f059f814092b8db50a2"
+metafile = true
+
+[[files]]
 file = "mods/ambient-environment.pw.toml"
 hash = "bdf0dda60aab59a5b721fe6699aee8db22adc1bf015c1290ce0f526c4ec4ff84"
 metafile = true
@@ -723,6 +728,11 @@ metafile = true
 [[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "1102440dd2533ba3a154419bb95ff1f81b858201eb0c44d2a2eea486c74e565a"
+metafile = true
+
+[[files]]
+file = "mods/async.pw.toml"
+hash = "00d56e09d6f9800aaca1fee0fba338b2910d307eeb433520431348a623eb9504"
 metafile = true
 
 [[files]]
@@ -961,6 +971,11 @@ hash = "89e18f90b2476b7f9e518cfa237c6daed3091043e3f22db3dd38c2da5b26ede5"
 metafile = true
 
 [[files]]
+file = "mods/ebe.pw.toml"
+hash = "b1f89407254a20cde6c60994a6315bd841b7f562669a1d29b436ec97463ff2ae"
+metafile = true
+
+[[files]]
 file = "mods/economical-villager-trading.pw.toml"
 hash = "0522425da4b2d7b99fe9cbffbc10b31e729413b0df59c02964029b0d2fe9529f"
 metafile = true
@@ -1171,6 +1186,11 @@ hash = "26f3c572aaf4ad0303f12e4fa257cc4f34bc30f3e2ac1d1dc75f44632141876d"
 metafile = true
 
 [[files]]
+file = "mods/leaves-be-gone.pw.toml"
+hash = "88ce962f82ca2b6ab99ab546031a9406ff053a5078002134b43fe3ab22327e85"
+metafile = true
+
+[[files]]
 file = "mods/legendary-monuments.pw.toml"
 hash = "e1f8a888c24fa3af21d18428471a72ee867321adfda329e31dc3ba555fc0209f"
 metafile = true
@@ -1361,8 +1381,18 @@ hash = "5648f112e21c9cec8400201fd62c77e7f535616219b98c360e193223875995e6"
 metafile = true
 
 [[files]]
+file = "mods/scalablelux.pw.toml"
+hash = "ceb180c764fa9c7c12c7e750cc7b726171277cb2b68e47370888c4ff4679a4ed"
+metafile = true
+
+[[files]]
 file = "mods/searchables.pw.toml"
 hash = "8302da862578554b012b2cfe58a3c1e75b514d09f94d842e7303be41a2157aeb"
+metafile = true
+
+[[files]]
+file = "mods/servercore.pw.toml"
+hash = "9c30553415e8f35e17cbfc760cd125a7dc603a611f261a153b52ef65138cb519"
 metafile = true
 
 [[files]]
