@@ -1,0 +1,13 @@
+name = "Carry Cats!"
+filename = "shouldercats-fabric-2.0+mc1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/pyA57x8S/versions/stC75pyF/shouldercats-fabric-2.0%2Bmc1.21.1.jar"
+hash-format = "sha512"
+hash = "d2f1e03628bf5766bf112d32a665f59e1f80205f964f3a427b757509322e6ba0995fa5b506868e7b7b91cccc4b4a10bfef7e08d2fa606a6d49aeec49d4299027"
+
+[update]
+[update.modrinth]
+mod-id = "pyA57x8S"
+version = "stC75pyF"

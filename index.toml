@@ -731,6 +731,11 @@ hash = "16f4aa64663e05ba013f9a38c69695e4086a6403575adb29b1379b417d28e519"
 metafile = true
 
 [[files]]
+file = "mods/autochefs-delight.pw.toml"
+hash = "6176847a64d4f530fbccfee465da9a92726d603221d0947e52403bd017f4dadb"
+metafile = true
+
+[[files]]
 file = "mods/bad-wither-no-cookie.pw.toml"
 hash = "80472ed95c490b2e5a828c769f30a1b4ed2b8c502ac2d0f577f1c838aaf7ec5e"
 metafile = true
@@ -761,6 +766,11 @@ hash = "00f223fda7198f380360967e58208b3edd27de8f00e312c7294e669ffa075c14"
 metafile = true
 
 [[files]]
+file = "mods/better-archeology.pw.toml"
+hash = "f6dde00965d11938aa025000fb76ab1b695be0627e08f503857ba9ee871a172d"
+metafile = true
+
+[[files]]
 file = "mods/better-ping-display-fabric.pw.toml"
 hash = "41e498514e277ea0dce7c4bcd1144b61a6174436bb9db32d532ac4ce446e9c64"
 metafile = true
@@ -781,8 +791,18 @@ hash = "ab46e199edeec40be9257af33b82ca2402625ba4fce0722274623bd2f919dc9b"
 metafile = true
 
 [[files]]
+file = "mods/bushier-flowers.pw.toml"
+hash = "537f2d2618b32590c75a6bf01040216776abbd9361e2bf6dc4283b491bbdbd51"
+metafile = true
+
+[[files]]
 file = "mods/c2me-fabric.pw.toml"
 hash = "3fec3b665aa3c260075cabf00d04c75c6effd6b7b5f4e5e7a2c043b803d54ed8"
+metafile = true
+
+[[files]]
+file = "mods/carry-cats!.pw.toml"
+hash = "195aa21c9be52958167a865668e56235a936e03d445e679d04828e2fdb733c48"
 metafile = true
 
 [[files]]
@@ -903,6 +923,11 @@ metafile = true
 [[files]]
 file = "mods/disc-workshop.pw.toml"
 hash = "aa5c07d31b7b382080f88ebd7b43c8e45436bf917b3b8053f31735141f4c79cb"
+metafile = true
+
+[[files]]
+file = "mods/display-delight-fabric.pw.toml"
+hash = "fe23222452df9e4d57a1b27db2162bfddd351471c291d5ef08db5806e5794bbd"
 metafile = true
 
 [[files]]
@@ -1316,6 +1341,11 @@ hash = "e877957d6f1698a6709d9cfee71503d2e48fa025586eeff416961ba9740eab67"
 metafile = true
 
 [[files]]
+file = "mods/resourceful-config.pw.toml"
+hash = "2272f386d6106a691953f80822614643f0a4ef9df1cbff71fcc02caebd8ad45b"
+metafile = true
+
+[[files]]
 file = "mods/resourceful-lib.pw.toml"
 hash = "d3f633dd12cd039a4e58dd398d1c80a324b0d78b9da5b3972b69640bfed211ed"
 metafile = true
@@ -1388,6 +1418,11 @@ metafile = true
 [[files]]
 file = "mods/stendhal.pw.toml"
 hash = "b03866e0e7d49879e8cebe4b36d8135ce8a4a36eb49c953416d5e013b690a099"
+metafile = true
+
+[[files]]
+file = "mods/storage-delight.pw.toml"
+hash = "91bbff2b5c16ac3ed35369f391ae7f05d2cc4a0624a7e88277698935e9212604"
 metafile = true
 
 [[files]]
