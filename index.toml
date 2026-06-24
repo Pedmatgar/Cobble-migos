@@ -646,6 +646,10 @@ file = "config/yosbr/options.txt"
 hash = "3648836f76557db94ea0765e9ad8fa6b1ba6fa987168894cd350e2f17e968ffe"
 
 [[files]]
+file = "config/yosbr/shaderpacks/ComplementaryReimagined_r5.7.1.zip"
+hash = "24a20634a7832d422d3cd5023be16829f26840e25c69404dd418306ea79f63f0"
+
+[[files]]
 file = "config/yosbr/shaderpacks/ComplementaryReimagined_r5.7.1.zip.txt"
 hash = "1c5efbb5f8f5b94696ed9dce56982a994080922fa527e7bdaad68db9241bddd4"
 
@@ -660,6 +664,11 @@ hash = "a01df5ba3c4252ae282cb55e3e2183f3aa83e1bc173e7911b13fdb499e1eba1c"
 [[files]]
 file = "instance.png"
 hash = "efd488c2f003cbd4b7ef9a50a9b56c74fb2ddcb8bd4a6721fdf8eceb7a852cf2"
+
+[[files]]
+file = "mods/abridged.pw.toml"
+hash = "9216a77c5a236538f87e8f11aebd3701d0512bd962edcaa9689727508ea30c31"
+metafile = true
 
 [[files]]
 file = "mods/accessories.pw.toml"
@@ -808,7 +817,7 @@ metafile = true
 
 [[files]]
 file = "mods/cloth-config.pw.toml"
-hash = "9e21cc4fae5ed88e306b4601c5e1533f883aa8b60c6e36dedeec82718be87059"
+hash = "446c173c87b7908daee86b0dee89c6b628c77beb7a0bc091ff5252b7c0062080"
 metafile = true
 
 [[files]]
@@ -879,6 +888,11 @@ metafile = true
 [[files]]
 file = "mods/craftpresence.pw.toml"
 hash = "bcdf6d7a7ff8affa16ffe0d9d0150221c05f778f56adf8d5a09d3461cfb9375f"
+metafile = true
+
+[[files]]
+file = "mods/ct-overhaul-village.pw.toml"
+hash = "60af6a35855d15c5e608d7fdb3741c04a0b2300ca085df9bcc86422ba5969bb5"
 metafile = true
 
 [[files]]
@@ -999,6 +1013,11 @@ metafile = true
 [[files]]
 file = "mods/envelope.pw.toml"
 hash = "4ccdf7955736d928aa5dcf44e1635163e9638123ee9da2a29fc5e485a1f4601f"
+metafile = true
+
+[[files]]
+file = "mods/explorations.pw.toml"
+hash = "7232424fa28fee9704c409e2ed1fa1c8d472fdfa7733f8ff8e9d91aa8082ff7c"
 metafile = true
 
 [[files]]
@@ -1153,7 +1172,7 @@ metafile = true
 
 [[files]]
 file = "mods/lithostitched.pw.toml"
-hash = "6e5414de55320d49308fd8f0b2505355e40bfd422aeaf21ccf62635f45d60513"
+hash = "c4305edb8b795244c5c751b91c1c59b7d0e0cc947982ae287f883f178b1fcc9d"
 metafile = true
 
 [[files]]
@@ -1443,6 +1462,16 @@ metafile = true
 [[files]]
 file = "mods/yosbr.pw.toml"
 hash = "bbbcf529b4c35f04e733922ca06dde4aac8d97a556e4396da25d99e2d079c0c9"
+metafile = true
+
+[[files]]
+file = "mods/yungs-api.pw.toml"
+hash = "4d98bdba90cdeae788a747bb6fe7d438ba49fdc4eb67c38d4573304eec4a2ef8"
+metafile = true
+
+[[files]]
+file = "mods/yungs-bridges.pw.toml"
+hash = "f0779c5ec85b19542d39dd3df11c0fd521c465f5da2bafc9d1a6250a30719cc6"
 metafile = true
 
 [[files]]
