@@ -896,11 +896,6 @@ hash = "49da1f100b78a8ad75c06dce97631944dfadc3598c0283d0217a80eb0b2e45b5"
 metafile = true
 
 [[files]]
-file = "mods/companion.pw.toml"
-hash = "dfec15a02f05f3d7dec36394a85192db71621a80fcc1a1aca1185ca3c6c8a107"
-metafile = true
-
-[[files]]
 file = "mods/continuity.pw.toml"
 hash = "fd9b37c0dd351191944a8ebef602b1f0f35aaeb151dd236f773638bf8b609131"
 metafile = true
@@ -1168,11 +1163,6 @@ metafile = true
 [[files]]
 file = "mods/keepthatmusic.pw.toml"
 hash = "f3124bc06c39ababe303cab1671501eb7a404a2625cb95621fd4184a2cd1caa5"
-metafile = true
-
-[[files]]
-file = "mods/kiwi.pw.toml"
-hash = "1062609b58162aef42230cdebb6c63fa15c5ed7de9ae7709d38c85ba1078578c"
 metafile = true
 
 [[files]]
