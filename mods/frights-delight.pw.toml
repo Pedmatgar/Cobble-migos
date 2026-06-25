@@ -1,0 +1,13 @@
+name = "Fright's Delight"
+filename = "frightsdelight-fabric-1.21.1-1.4.8.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/awWvXlb2/versions/A9XUynei/frightsdelight-fabric-1.21.1-1.4.8.jar"
+hash-format = "sha512"
+hash = "030d208eceeb1b7db909dc5915e9a76aeb1669484a0041f413c83f69b45b47988c6a0810200ccb6a1e4f1cf5aac3a1111d86c5505c0f4b68e4f61c36699afeb0"
+
+[update]
+[update.modrinth]
+mod-id = "awWvXlb2"
+version = "A9XUynei"

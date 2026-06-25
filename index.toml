@@ -796,6 +796,11 @@ hash = "8c2053d080a7e4f24e5a426aff0feb26d8e795e4aceefa513f9de1935985d1c3"
 metafile = true
 
 [[files]]
+file = "mods/brewin-and-chewin.pw.toml"
+hash = "4f27399e9400a258f420278a83180bef71278d67850d0d7e478a41181661e87c"
+metafile = true
+
+[[files]]
 file = "mods/bundle-pins.pw.toml"
 hash = "ab46e199edeec40be9257af33b82ca2402625ba4fce0722274623bd2f919dc9b"
 metafile = true
@@ -811,13 +816,13 @@ hash = "3fec3b665aa3c260075cabf00d04c75c6effd6b7b5f4e5e7a2c043b803d54ed8"
 metafile = true
 
 [[files]]
-file = "mods/carry-cats!.pw.toml"
-hash = "195aa21c9be52958167a865668e56235a936e03d445e679d04828e2fdb733c48"
+file = "mods/cats-dont-care.pw.toml"
+hash = "2ef5b1a273afd366b62c34a16e4d429926666335fe1ec15274347e428baeea9f"
 metafile = true
 
 [[files]]
-file = "mods/cats-dont-care.pw.toml"
-hash = "2ef5b1a273afd366b62c34a16e4d429926666335fe1ec15274347e428baeea9f"
+file = "mods/chefs-delight.pw.toml"
+hash = "55f058aab9ec652e99af38a83eeae17eafe670d7cbdf386b6cfb884f6aca477b"
 metafile = true
 
 [[files]]
@@ -923,6 +928,11 @@ metafile = true
 [[files]]
 file = "mods/ct-overhaul-village.pw.toml"
 hash = "60af6a35855d15c5e608d7fdb3741c04a0b2300ca085df9bcc86422ba5969bb5"
+metafile = true
+
+[[files]]
+file = "mods/cultural-delights.pw.toml"
+hash = "afe864fddfbf53a2bf3cd2aa3815a5281b60d1e3aed34a5e3fe0cf963191b04f"
 metafile = true
 
 [[files]]
@@ -1101,6 +1111,11 @@ hash = "db9132a1c74b5585081eb027348cfd92db40f05c886d63cd5aa9c4c61547ec61"
 metafile = true
 
 [[files]]
+file = "mods/floras-delight.pw.toml"
+hash = "8c2a6f648dc6c2e167aa2177a3a1e6d109f7fd167179670bf0a2eaff0be83e1a"
+metafile = true
+
+[[files]]
 file = "mods/forge-config-api-port.pw.toml"
 hash = "238b3ceb4214a682480ce00eefae5d34efa299ff6ff667e4b2f2ed503c6e76ee"
 metafile = true
@@ -1108,6 +1123,11 @@ metafile = true
 [[files]]
 file = "mods/friends-and-foes.pw.toml"
 hash = "0c2f42374022bcbd3b15b6432cca31dda311e2bd26ab5b02f3d036c90c32e399"
+metafile = true
+
+[[files]]
+file = "mods/frights-delight.pw.toml"
+hash = "d64518b344e20e023f553ed4da342fe42ce462c6977a0429bcec13810b91c019"
 metafile = true
 
 [[files]]
@@ -1276,6 +1296,11 @@ hash = "7fc969e77edc3b0b9946b42070fd858349a74555f0cf9648907241af8a3a2d25"
 metafile = true
 
 [[files]]
+file = "mods/my-nethers-delight-refabricated.pw.toml"
+hash = "ed1e9b74fbdf9b401bf25e4ad4b17511fc2ac0bd6e79f6d46e939252378c82a9"
+metafile = true
+
+[[files]]
 file = "mods/netherportalfix.pw.toml"
 hash = "2f48f2b454092408f2653cdd59b6b924788323095880721259c1cabd53c83eac"
 metafile = true
@@ -1378,6 +1403,11 @@ metafile = true
 [[files]]
 file = "mods/rrls.pw.toml"
 hash = "430849e1f284451740f7ecd31f7691f8cd84e6aa9aa7e8b3b97da31aca5d9cef"
+metafile = true
+
+[[files]]
+file = "mods/rustic-delight.pw.toml"
+hash = "296d4d3b1c75ba7447b533bb523bfbc4aa6f4dc9b3e912cab435dd5b6acaf738"
 metafile = true
 
 [[files]]
@@ -1487,6 +1517,11 @@ metafile = true
 [[files]]
 file = "mods/tooltipfix.pw.toml"
 hash = "a9b60e8434424b2c10e0de9b5d3ab98325b10df2dd9e6aed82e8d7828c981b9f"
+metafile = true
+
+[[files]]
+file = "mods/trailtales-delight.pw.toml"
+hash = "7b83fb97e1b10d79facae8c65138bd3c915ff25bba39761f0d04639f2c4cd37a"
 metafile = true
 
 [[files]]
