@@ -95,7 +95,7 @@ jobs:
               "java", "fabric", "forge", "neoforge", "quilt_loader",
               "mixinextras", "kirin", "xaerolib", "lambdynlights_runtime",
               "sodium", # Ignoramos sodium porque Indium tiene una dependencia estricta conflictiva
-              "voicechat_api"
+              "voicechat_api","greenhouseconfig"
           }
           ignore_prefixes = ["fabric-", "quilt-", "canvas-"]
 
