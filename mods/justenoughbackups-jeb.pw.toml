@@ -1,6 +1,6 @@
 name = "Just Enough Backups (JEB)"
 filename = "justenoughbackups-1.0.1.1+1.21.1.jar"
-side = "both"
+side = "server"
 
 [download]
 url = "https://cdn.modrinth.com/data/ctV8T1ZK/versions/2Kdl4TIp/justenoughbackups-1.0.1.1%2B1.21.1.jar"
