@@ -322,7 +322,7 @@ hash = "0b7d9dcfc1122e488c28991456edca82080ce402bdf1b45bbd35dc7fceaaa1c5"
 
 [[files]]
 file = "config/interactic.json5"
-hash = "d6fb2389b31b8fe5d854fc837655d9013d1b118d98dab8e82ec5202ea1d7b43d"
+hash = "55e4f889de7da90f7f917a59453564a8d759ac2434a489160c70cb2f45c668dc"
 
 [[files]]
 file = "config/invmove.json"
@@ -667,7 +667,7 @@ hash = "2d50c46e61e576067603fca3c5115b25dbb435982cfc9df06523b65b30638e8f"
 
 [[files]]
 file = "instance.png"
-hash = "efd488c2f003cbd4b7ef9a50a9b56c74fb2ddcb8bd4a6721fdf8eceb7a852cf2"
+hash = "30ade41aa5280a5d8786c4d46a39fcd2500a5e5d9f9aeb30403830dffbe04c0d"
 
 [[files]]
 file = "mods/abridged.pw.toml"
@@ -1645,4 +1645,4 @@ metafile = true
 
 [[files]]
 file = "unsup.toml"
-hash = "bbdc94f693f12bb06435f21b1ec397be3902540fce1558cb440bdfd04f36cbe2"
+hash = "24984adcbb70a734c2e317f9b6c97799a916185ac448e79df64dc2f02648ad1c"
