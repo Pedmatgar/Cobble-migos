@@ -1,0 +1,13 @@
+name = "Voice Messages"
+filename = "voicemessages-fabric-1.0.12-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/WWLeFuHa/versions/xD63BfuX/voicemessages-fabric-1.0.12-1.21.1.jar"
+hash-format = "sha512"
+hash = "2e385c30e66adb6521d2959904f9456b8c322405c19118289f7f87f91cf104fc5a307c46db9b9c9183906d93f384793acd78f9967846b9d4c4869e959c977391"
+
+[update]
+[update.modrinth]
+mod-id = "WWLeFuHa"
+version = "xD63BfuX"

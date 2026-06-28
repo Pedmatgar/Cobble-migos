@@ -1594,8 +1594,18 @@ hash = "5d6abaadd99d9e779849c989017e752b93b5ad023d0a51ff84628c4bc22377fb"
 metafile = true
 
 [[files]]
+file = "mods/voice-chat-interaction.pw.toml"
+hash = "388ad48f4bd97f7391bfcedd485fe5faa2c6ecffd3369dd7d3cbf031b7b04551"
+metafile = true
+
+[[files]]
 file = "mods/voicechat-names.pw.toml"
 hash = "200915aab14935e057262f2635a7e4bbe526865b8b5d55597f1a0199318bf36b"
+metafile = true
+
+[[files]]
+file = "mods/voicemessages.pw.toml"
+hash = "2207d013a92e7ef85a8889f9b248f219929142dcaf29646ae39c11c4901ac3ce"
 metafile = true
 
 [[files]]
