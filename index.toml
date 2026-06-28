@@ -1644,5 +1644,9 @@ hash = "8b6513ec92d66dd68550908ac173700f2ed22fb88dcad71709a11b437db3793b"
 metafile = true
 
 [[files]]
+file = "server-icon.png"
+hash = "d5fe45a657d335dda4c9170ac8c632fac05c1fa01d2c38a4b7b884d198e0b934"
+
+[[files]]
 file = "unsup.toml"
 hash = "24984adcbb70a734c2e317f9b6c97799a916185ac448e79df64dc2f02648ad1c"
