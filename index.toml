@@ -321,6 +321,10 @@ file = "config/forgeconfigapiport.toml"
 hash = "0b7d9dcfc1122e488c28991456edca82080ce402bdf1b45bbd35dc7fceaaa1c5"
 
 [[files]]
+file = "config/interactic.json5"
+hash = "d6fb2389b31b8fe5d854fc837655d9013d1b118d98dab8e82ec5202ea1d7b43d"
+
+[[files]]
 file = "config/invmove.json"
 hash = "1ff96d592937863977b78b9ec405415b5ee4c26fb2722c52579b6f8b1a024d9b"
 
@@ -1641,4 +1645,4 @@ metafile = true
 
 [[files]]
 file = "unsup.toml"
-hash = "4e0b9ca5fa3afed160ee3964bd3b74316e9f4f0212e19b055f818262047d5c34"
+hash = "bbdc94f693f12bb06435f21b1ec397be3902540fce1558cb440bdfd04f36cbe2"

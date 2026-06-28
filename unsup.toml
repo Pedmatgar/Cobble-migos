@@ -1,7 +1,7 @@
 [flavor_groups.rendimiento]
 name = "Perfil de Rendimiento y Gráficos"
 description = "Elige la versión del modpack que mejor se adapte a tu ordenador.\n<i>Afecta la cantidad de mods visuales, físicas y de ambiente instalados.</i>"
-side = "client"
+side = "both"
 
 # --- OPCIÓN LOW END ---
 [[flavor_groups.rendimiento.choices]]
@@ -59,4 +59,7 @@ flavors = "high_end"
 flavors = "high_end"
 
 [metafile.sound]
+flavors = "high_end"
+
+[metafile.yosbr]
 flavors = "high_end"
