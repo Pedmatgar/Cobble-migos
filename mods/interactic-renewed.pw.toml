@@ -1,0 +1,17 @@
+name = "Interactic Renewed"
+filename = "interactic-renewed-0.2.3+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/BM12h14f/versions/dbGaW2vq/interactic-renewed-0.2.3%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "d1b158c4565484b41d1e6db4e8146c261cf79dfd166f94ae6b25226337a1e38745ab880aebffa0d4194f547a8fbcf37784de96297eb7f7796e2234a632eb61de"
+
+[update]
+[update.modrinth]
+mod-id = "BM12h14f"
+version = "dbGaW2vq"
+
+[option]
+optional = true
+default = false

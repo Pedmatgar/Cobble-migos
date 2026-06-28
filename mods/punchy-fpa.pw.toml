@@ -1,0 +1,17 @@
+name = "Punchy!"
+filename = "punchy-2.5.8-fabric-1.21.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/8aoMKplv/versions/FyQMlXRH/punchy-2.5.8-fabric-1.21.1.jar"
+hash-format = "sha512"
+hash = "01f0b1e6ad9dfb61ceb75765b712368c758a78e8e0c295ac219be93db2b8bd4374de4ce14705022469eae40fcc1ccf5c16081325f11555d22870d4fabc0ebf13"
+
+[update]
+[update.modrinth]
+mod-id = "8aoMKplv"
+version = "FyQMlXRH"
+
+[option]
+optional = true
+default = false

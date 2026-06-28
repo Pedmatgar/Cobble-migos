@@ -1,0 +1,62 @@
+[flavor_groups.rendimiento]
+name = "Perfil de Rendimiento y Gráficos"
+description = "Elige la versión del modpack que mejor se adapte a tu ordenador.\n<i>Afecta la cantidad de mods visuales, físicas y de ambiente instalados.</i>"
+side = "client"
+
+# --- OPCIÓN LOW END ---
+[[flavor_groups.rendimiento.choices]]
+id = "low_end"
+name = "Low End"
+description = "<b>Rendimiento Máximo</b>\nLa versión base del modpack. Recomendado para PCs de bajos recursos.\nNo incluye shaders, físicas avanzadas ni efectos visuales pesados para garantizar los mejores FPS."
+
+# --- OPCIÓN HIGH END ---
+[[flavor_groups.rendimiento.choices]]
+id = "high_end"
+name = "High End"
+description = "<b>Experiencia Completa</b>\nPara PCs potentes. Incluye todas las mejoras visuales y de inmersión:<ul><li>Distant Horizons e Iris (Shaders)</li><li>Físicas de sonido y físicas de objetos</li><li>Efectos de lluvia, charcos y nubes realistas</li><li>Luces dinámicas y otros efectos inmersivos</li></ul>"
+
+
+# ==========================================
+# ASIGNACIÓN DE MODS A HIGH END
+# ==========================================
+# Nota: Los nombres aquí deben coincidir exactamente con el nombre de 
+# su archivo .pw.toml correspondiente (sin el ".pw.toml").
+
+[metafile.lambdynamiclights]
+flavors = "high_end"
+
+[metafile.irisshaders]
+flavors = "high_end"
+
+[metafile.distanthorizons]
+flavors = "high_end"
+
+[metafile.satin-free-wakes]
+flavors = "high_end"
+
+[metafile.elytra-contrails-mod]
+flavors = "high_end"
+
+[metafile.breath-sweat]
+flavors = "high_end"
+
+[metafile.interactic-renewed]
+flavors = "high_end"
+
+[metafile.better-clouds]
+flavors = "high_end"
+
+[metafile.sound-physics-perfected]
+flavors = "high_end"
+
+[metafile.punchy-fpa]
+flavors = "high_end"
+
+[metafile.particle-rain]
+flavors = "high_end"
+
+[metafile.puddles-floods]
+flavors = "high_end"
+
+[metafile.sound]
+flavors = "high_end"
