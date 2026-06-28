@@ -60,6 +60,3 @@ flavors = "high_end"
 
 [metafile.sound]
 flavors = "high_end"
-
-[metafile.yosbr]
-flavors = "high_end"
