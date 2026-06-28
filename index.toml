@@ -1550,6 +1550,11 @@ hash = "e35593590fe988653baebae4638f6c93b5d822351274955cc1288b34fe5429fe"
 metafile = true
 
 [[files]]
+file = "mods/the-roads-more-travelled.pw.toml"
+hash = "684c15273ce9b9afbe4903609de9276b45be4a54362f1bd0643de500f1df5dc5"
+metafile = true
+
+[[files]]
 file = "mods/tips.pw.toml"
 hash = "be9c0a0671d89b53345d45447db05cb47f0e40bdeb416c81be7d0ef63d65516a"
 metafile = true
