@@ -482,6 +482,10 @@ file = "config/presencefootsteps/userconfig.json"
 hash = "1cb26a471de1f7ea80afeb77c35c9e86a7ecb9881e948b891eaea41b354046af"
 
 [[files]]
+file = "config/puddleflood.json"
+hash = "d63ee0435b6762582ab67be8a2c24ad7be89ff39c089339c7bf8c31adbaa4d31"
+
+[[files]]
 file = "config/roughlyenoughitems/collapsible.json5"
 hash = "a59667baa54738c1b294393a9b3652bcf7d392cdb8cba1c08a8006885b18e919"
 
@@ -1186,7 +1190,7 @@ metafile = true
 
 [[files]]
 file = "mods/interactic-renewed.pw.toml"
-hash = "4c8c932a10d89252a76632af646acbbdfdaa4782e44a6528862873e5b92da2ee"
+hash = "60721e33371bb3f4011d9f9b7554d4fb6ae642b381c3aa1782824f33f435a358"
 metafile = true
 
 [[files]]
@@ -1416,7 +1420,7 @@ metafile = true
 
 [[files]]
 file = "mods/puddles-floods.pw.toml"
-hash = "19abfdb66ac8296e833246453e25d62c57efa63f6b4925755b24e6bbcfc8b30c"
+hash = "e9b565e8c366987379b1af4a6fcb985892630df552ff25a0083c78d0424fcc4f"
 metafile = true
 
 [[files]]
@@ -1664,4 +1668,4 @@ hash = "d5fe45a657d335dda4c9170ac8c632fac05c1fa01d2c38a4b7b884d198e0b934"
 
 [[files]]
 file = "unsup.toml"
-hash = "8147c25dc6749c9e8298ddd8d39cb12a7ad912e523990dec9355972fe789874c"
+hash = "86062167008096077f2bfd332b03db1d0f1c6aebc640f6f399cb1337b9664f44"
