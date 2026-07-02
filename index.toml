@@ -462,7 +462,7 @@ hash = "a9076d31f99a7c047a0312f28ab47b6238efd759be1bf5e1a8d72dccf7228368"
 
 [[files]]
 file = "config/openloader/resources/MisTips_ResourcePack.zip"
-hash = "41b0b39ce941e45a1b8635d540e052978cf10e4acbc4ee710fab40da4118dd71"
+hash = "408f7b5639b31211e81f699fc5b08378fc684c6b859ddbed952748a18c5dfc78"
 
 [[files]]
 file = "config/openloader/resources/allthemons.pw.toml"
@@ -555,7 +555,7 @@ hash = "a0522e208438472fb33485fc6011dba0aadfb5581763cab6c62a3a2628cb24f1"
 
 [[files]]
 file = "config/tipsmod.json"
-hash = "660318df951ac8d089fabd14b9a0dfb8838d04bec8f70c93ee1f34c7871878f7"
+hash = "17a35e02a6ca469317c4f920d2f31b58708c1a3a75e5c35761759e44fea6dcfa"
 
 [[files]]
 file = "config/transition.json"

@@ -5,11 +5,11 @@
       "next tip.                                                                       "
     ],
     "//default": 5000,
-    "value": 5000
+    "value": 10000
   },
   "ignored_namespaces": {
     "//": "Tips from an ignored namespace will not be displayed in game.",
-    "value": ["cobblemontips"]
+    "value": ["cobblemontips", "tipsmod"]
   },
   "ignored_tip_ids": {
     "//": "Adding a tip ID here will prevent it from being displayed.",
