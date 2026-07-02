@@ -1,5 +1,0 @@
-{
-  "tip": {
-    "text": "Recuerda que siendo A una matriz cuadrada de orden 3, |A|=0 → ∉A⁻¹ ya que 1/|A| · adj(A)ᵗ = A⁻¹"
-  }
-}
