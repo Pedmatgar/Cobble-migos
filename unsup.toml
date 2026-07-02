@@ -40,9 +40,6 @@ flavors = "high_end"
 [metafile.breath-sweat]
 flavors = "high_end"
 
-[metafile.interactic-renewed]
-flavors = "high_end"
-
 [metafile.better-clouds]
 flavors = "high_end"
 
@@ -53,9 +50,6 @@ flavors = "high_end"
 flavors = "high_end"
 
 [metafile.particle-rain]
-flavors = "high_end"
-
-[metafile.puddles-floods]
 flavors = "high_end"
 
 [metafile.sound]

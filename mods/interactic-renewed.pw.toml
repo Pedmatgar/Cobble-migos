@@ -12,6 +12,3 @@ hash = "d1b158c4565484b41d1e6db4e8146c261cf79dfd166f94ae6b25226337a1e38745ab880a
 mod-id = "BM12h14f"
 version = "dbGaW2vq"
 
-[option]
-optional = true
-default = false
