@@ -113,6 +113,10 @@ file = "config/enhanced_attack_indicator.json"
 hash = "a465ac9fd343ed2d2454a2c8488f8812e6742e434bff7e98d1432797fc6c5ea4"
 
 [[files]]
+file = "config/enhanced_bes.properties"
+hash = "f324ef3ab4d10291bdacabc7a6cdde8bf0d3355ea3ac18a1cc917c596bcf0bb1"
+
+[[files]]
 file = "config/entity_model_features.json"
 hash = "7d664ac8fcbe52c8efee6101465540d4bdf0c29c51c941ed925a8f4aa0fba31e"
 
