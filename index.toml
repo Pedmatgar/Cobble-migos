@@ -389,6 +389,10 @@ file = "config/jei/recipe-category-sort-order.ini"
 hash = "b93efb452b74d100f254258571c74e3b06d598cb1522c51a05259f6e52b28058"
 
 [[files]]
+file = "config/justenoughbackups.json"
+hash = "bdc66e7033f353ee939c2d5b64a4a82714c29bb13d5dc8e958600dae0f446d5b"
+
+[[files]]
 file = "config/konkrete/locals/de_de.local"
 hash = "79a34cfd15c2d9c06498dc221be79279507d9b57666cd44f8d2c2cf95d3582ef"
 

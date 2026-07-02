@@ -1,0 +1,39 @@
+{
+  "backupMode": "DIFFERENTIAL",
+  "automaticBackupsEnabled": true,
+  "pauseAutomaticBackupsWithoutPlayers": true,
+  "backupOnServerStart": false,
+  "backupOnServerStop": false,
+  "automaticIntervalMinutes": 60,
+  "automaticBackupWarningEnabled": true,
+  "automaticBackupWarningMinutes": 5,
+  "commandPermissionLevel": 2,
+  "messageChannel": "CHAT",
+  "integrityMode": "STRICT",
+  "retention": {
+    "full": 5,
+    "incremental": 20,
+    "differential": 10,
+    "maxTotalSizeMb": 0
+  },
+  "popup": {
+    "enabled": true,
+    "showTitle": true,
+    "centerText": true,
+    "showBorder": true,
+    "x": 4,
+    "y": 4,
+    "xRatio": 0.0,
+    "yRatio": 0.0,
+    "backgroundColor": "0xAA101010",
+    "runningColor": "0xFF55FFFF",
+    "completedColor": "0xFF55FF55",
+    "failedColor": "0xFFFF5555",
+    "textColor": "0xFFE0E0E0",
+    "title": "Just Enough Backups",
+    "runningText": "Running {reason} {type}",
+    "completedText": "Completed {reason} {type}",
+    "failedText": "Unable to Backup"
+  },
+  "backupDirectory": "backups/"
+}
