@@ -965,6 +965,11 @@ hash = "aa5c07d31b7b382080f88ebd7b43c8e45436bf917b3b8053f31735141f4c79cb"
 metafile = true
 
 [[files]]
+file = "mods/discord-mc-chat.pw.toml"
+hash = "578fc88095dde3ea3fe6371c69c4fa789f2b5956229149aab5162463a929cbaa"
+metafile = true
+
+[[files]]
 file = "mods/display-delight-fabric.pw.toml"
 hash = "fe23222452df9e4d57a1b27db2162bfddd351471c291d5ef08db5806e5794bbd"
 metafile = true
