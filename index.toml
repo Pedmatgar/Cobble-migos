@@ -1295,6 +1295,11 @@ hash = "c4305edb8b795244c5c751b91c1c59b7d0e0cc947982ae287f883f178b1fcc9d"
 metafile = true
 
 [[files]]
+file = "mods/lootr.pw.toml"
+hash = "82eb9c280e37579b10eef1a72f703b43e4999310eca26e0c9b3718f6f1090dce"
+metafile = true
+
+[[files]]
 file = "mods/lumiereplay.pw.toml"
 hash = "f97e40445680532ba36337476e5566a5459c2d02b258d443ff8eb60b9691de11"
 metafile = true
