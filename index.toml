@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/DistantHorizons.toml"
+hash = "507aa2f015db4fd2c0eb90f0c85c06671e8cecb7eb091a43f6fca2362de905f5"
+
+[[files]]
 file = "config/MouseTweaks.cfg"
 hash = "11ba09a6771da982f9bdc906cb50b803804ab4d627566c85fc5ce9a7c4a72d68"
 
@@ -1262,7 +1266,7 @@ metafile = true
 
 [[files]]
 file = "mods/legendary-monuments.pw.toml"
-hash = "e1f8a888c24fa3af21d18428471a72ee867321adfda329e31dc3ba555fc0209f"
+hash = "fd7bc3ad7f516c6f2cec2f4dcb64ea0e2137bf19d94f0a1baa91ecf2651b8686"
 metafile = true
 
 [[files]]
