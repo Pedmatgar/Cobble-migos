@@ -437,6 +437,10 @@ file = "config/loadmyresources/config.cfg"
 hash = "549a26b9b8ab9e2df0a427732a737c5dbcdb0b6790ad7ea9a387dea789abcad5"
 
 [[files]]
+file = "config/lootr.json"
+hash = "1da5278b6d9833ebad538602c457b41596fed7bf56933d514801ff8ab75960f3"
+
+[[files]]
 file = "config/make_bubbles_pop.json"
 hash = "2266b2e507e4dcea55fb1a53be33690efc8c1fe4ce7a559a98a29fecac2069c4"
 
@@ -671,7 +675,7 @@ hash = "121b93764159be6fb7dab523b29a844e2bb78400ce8c48f52135a097e9b0006e"
 
 [[files]]
 file = "config/yosbr/options.txt"
-hash = "15458d927fed78657f6fcccb3c9021d5af5b3db2a8d88e5f3efe5ec55e2b5e78"
+hash = "26f85eb4bae53b957d7d6303e332fc3eac0e7e8940b7261e4c39599aaa591ae7"
 
 [[files]]
 file = "config/yosbr/shaderpacks/ComplementaryReimagined_r5.7.1.zip"
