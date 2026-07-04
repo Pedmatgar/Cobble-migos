@@ -77,6 +77,10 @@ file = "config/citresewn.json"
 hash = "1ea03400477ac2075d61ae58cfc573bc78ce954507d090ab69547de279918656"
 
 [[files]]
+file = "config/cobblemon/main.json"
+hash = "593cb4a6ecac5bbf83c559385d0843dfce2ab16a978c57a9a4b3f24d456962b3"
+
+[[files]]
 file = "config/companion-common.yaml"
 hash = "b002cd38c209d8775a9853495529c216481e69614598b37e0ef366ca2bdd2a19"
 
