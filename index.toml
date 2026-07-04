@@ -1424,11 +1424,6 @@ hash = "812a77feb8f4af7f166178efd63e678db44a8010082c04dbfd56a8c7cf8c502a"
 metafile = true
 
 [[files]]
-file = "mods/pet-gravestone.pw.toml"
-hash = "34e72f5e0535b63d3d76f27d0ca9e7b61d9fbcc9b3f116d9d96d36c49a86a186"
-metafile = true
-
-[[files]]
 file = "mods/platform.pw.toml"
 hash = "246e7782ef2cab501af48f56353de9d6a46f3479dcb12f282152eeacd03b7e60"
 metafile = true
