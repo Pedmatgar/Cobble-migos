@@ -477,6 +477,10 @@ file = "config/openloader/options.json"
 hash = "a9076d31f99a7c047a0312f28ab47b6238efd759be1bf5e1a8d72dccf7228368"
 
 [[files]]
+file = "config/openloader/resources/BushyFlowers-Datapack.zip"
+hash = "1b47dc5a5c9a14878e1f169d7856ee47be5cf6c6dfd04ade54d2933884481a36"
+
+[[files]]
 file = "config/openloader/resources/MisTips_ResourcePack.zip"
 hash = "408f7b5639b31211e81f699fc5b08378fc684c6b859ddbed952748a18c5dfc78"
 
