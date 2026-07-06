@@ -918,6 +918,11 @@ hash = "dac3735111150e6dee94f69b03ccf6c8f65e2c975421c4f730d9afc70a3f4154"
 metafile = true
 
 [[files]]
+file = "mods/cobblemon-pasture-loot.pw.toml"
+hash = "253284368b80980f3261e44b2a539db0a608f525c6adfe8f096803de0c8e9c90"
+metafile = true
+
+[[files]]
 file = "mods/cobblemon-pet-a-poke.pw.toml"
 hash = "d120d2d263c58b242a6cf18fb226357843bb81a8bd5b2eec1996dfa9dfc2ad7c"
 metafile = true
@@ -935,6 +940,11 @@ metafile = true
 [[files]]
 file = "mods/cobblemon.pw.toml"
 hash = "6413f6c6bef7abc5a808a54111f093a17daf4471e89d8535840f2a24966bdcd4"
+metafile = true
+
+[[files]]
+file = "mods/cobbreeding.pw.toml"
+hash = "bf5eed33e89ba5dd2c9fc5a0a462ca8dd32ae19a5e0643ffae6da15c54378f6d"
 metafile = true
 
 [[files]]
