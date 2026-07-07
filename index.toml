@@ -1353,7 +1353,7 @@ metafile = true
 
 [[files]]
 file = "mods/minecraft-transit-railway.pw.toml"
-hash = "0106ffeea4265ddf057436bd3bf0ddc216fee5d9c7f204c81ac932892d0a7992"
+hash = "842d81f940bab395cfcf54770cb206122d616746ffdadf29be4372848bf22b15"
 metafile = true
 
 [[files]]
