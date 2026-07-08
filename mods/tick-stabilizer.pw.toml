@@ -1,0 +1,13 @@
+name = "Tick Stabilizer"
+filename = "tickstabilizer-fabric-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/FWhIEIlv/versions/zLDwEjzj/tickstabilizer-fabric-1.0.1.jar"
+hash-format = "sha512"
+hash = "10d4683a6cb2eeb9e5567ef22368c9d65750a71bd81423e79a897f23a0259142d5f4bfdd25c182940c308cb05b964f8bd970a0aaaca0747b07d65256e507e789"
+
+[update]
+[update.modrinth]
+mod-id = "FWhIEIlv"
+version = "zLDwEjzj"

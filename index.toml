@@ -952,6 +952,11 @@ hash = "6413f6c6bef7abc5a808a54111f093a17daf4471e89d8535840f2a24966bdcd4"
 metafile = true
 
 [[files]]
+file = "mods/cobblemonoptimizer.pw.toml"
+hash = "1aa3ebadab4b0e4b11dc3b20a94ebdde05dd60e60767926f3ca9ef6190d69c31"
+metafile = true
+
+[[files]]
 file = "mods/cobbreeding.pw.toml"
 hash = "bf5eed33e89ba5dd2c9fc5a0a462ca8dd32ae19a5e0643ffae6da15c54378f6d"
 metafile = true
@@ -1618,6 +1623,11 @@ metafile = true
 [[files]]
 file = "mods/the-roads-more-travelled.pw.toml"
 hash = "684c15273ce9b9afbe4903609de9276b45be4a54362f1bd0643de500f1df5dc5"
+metafile = true
+
+[[files]]
+file = "mods/tick-stabilizer.pw.toml"
+hash = "c36f5273a0c82054d7a2375c2ee09400895382ef24716a9839f043b59c9cc9ef"
 metafile = true
 
 [[files]]
