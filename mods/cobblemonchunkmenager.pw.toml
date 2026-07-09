@@ -1,0 +1,13 @@
+name = "CobblemonChunkmenager"
+filename = "cobble-chunk-manager-1.1.0.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/B5Oa5DCX/versions/10eDaCP2/cobble-chunk-manager-1.1.0.jar"
+hash-format = "sha512"
+hash = "c49ece36d0db5946c65dc52265caae994780d77fbd1ddf8bc02bbefa8348a8c5a9a5f04fbbe239e5a231f891a9f98ec9a98ab1bf863f14f17a8a4eef89ef5f45"
+
+[update]
+[update.modrinth]
+mod-id = "B5Oa5DCX"
+version = "10eDaCP2"

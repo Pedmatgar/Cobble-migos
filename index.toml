@@ -952,6 +952,11 @@ hash = "6413f6c6bef7abc5a808a54111f093a17daf4471e89d8535840f2a24966bdcd4"
 metafile = true
 
 [[files]]
+file = "mods/cobblemonchunkmenager.pw.toml"
+hash = "3958ba99bf09998dbe650eab09c18bdc41b57a31ce57afa4765e8e4e9124abdc"
+metafile = true
+
+[[files]]
 file = "mods/cobblemonoptimizer.pw.toml"
 hash = "1aa3ebadab4b0e4b11dc3b20a94ebdde05dd60e60767926f3ca9ef6190d69c31"
 metafile = true
