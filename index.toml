@@ -1012,6 +1012,11 @@ hash = "e3dbc76d36c6fdca359b48d56d179da8399dc928dd1ff4d265041eae0d89c480"
 metafile = true
 
 [[files]]
+file = "mods/disable-end-portals.pw.toml"
+hash = "5325fdd517c3413c584e20bdf6932f2a1148561580e30e8cb77baa590e759c28"
+metafile = true
+
+[[files]]
 file = "mods/disc-workshop.pw.toml"
 hash = "aa5c07d31b7b382080f88ebd7b43c8e45436bf917b3b8053f31735141f4c79cb"
 metafile = true
