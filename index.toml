@@ -721,6 +721,11 @@ hash = "3e569c277103b97828036395c0553a57ff0e92a79b43c279f316fa6bb14cdd1d"
 metafile = true
 
 [[files]]
+file = "mods/almanac.pw.toml"
+hash = "01174ec973f9c2267f4d6ae6040941a3e764af58f9fa0b0a9f2914ce5630d728"
+metafile = true
+
+[[files]]
 file = "mods/alternate-current.pw.toml"
 hash = "015053563a1d8ef3334560cd27f8e832935a26a96f151f059f814092b8db50a2"
 metafile = true
