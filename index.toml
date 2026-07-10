@@ -858,7 +858,7 @@ metafile = true
 
 [[files]]
 file = "mods/c2me-fabric.pw.toml"
-hash = "3fec3b665aa3c260075cabf00d04c75c6effd6b7b5f4e5e7a2c043b803d54ed8"
+hash = "c836c53156b6f13fbc3fa3d1d6456f19685c61a43d595170debd5e534ceac294"
 metafile = true
 
 [[files]]
@@ -1333,7 +1333,7 @@ metafile = true
 
 [[files]]
 file = "mods/lithostitched.pw.toml"
-hash = "c4305edb8b795244c5c751b91c1c59b7d0e0cc947982ae287f883f178b1fcc9d"
+hash = "ab1fb1b294280382f33bfb9ce75f5efeea66c480aa72d04822da62b05bd2889a"
 metafile = true
 
 [[files]]
