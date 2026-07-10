@@ -25,6 +25,10 @@ file = "config/appleskin.json5"
 hash = "ab7f78056c199b438d556e3b3f431ed40313e32405fb1b287918f3117aca1191"
 
 [[files]]
+file = "config/badoptimizations.txt"
+hash = "a1fe838ea05b14063383b4b9577151ddc3ede2961c4edb59dd0f3cae28106a0a"
+
+[[files]]
 file = "config/balm-client.toml"
 hash = "e6ca77393d993b18e48a8d87115d52dad5eb0554ba3070f8919c257460fe377e"
 
@@ -858,7 +862,7 @@ metafile = true
 
 [[files]]
 file = "mods/c2me-fabric.pw.toml"
-hash = "c836c53156b6f13fbc3fa3d1d6456f19685c61a43d595170debd5e534ceac294"
+hash = "5d6ea44c38d99c53bd5c2b6e3bbc18957aa15264f44aa026ec1cb9e55db2708a"
 metafile = true
 
 [[files]]
@@ -1563,27 +1567,27 @@ metafile = true
 
 [[files]]
 file = "mods/sodium-extra.pw.toml"
-hash = "898e14275dd5cc187dee2b8f8fc83b4f0cdb56430b7fa64a8055e006d0249ce7"
+hash = "34f502a233413c6ffc3d50942eca7651dbef3b1f77a02634736214abcac1190d"
 metafile = true
 
 [[files]]
 file = "mods/sodium-leaf-culling.pw.toml"
-hash = "20c1c1da8ecf1fbb886a16922b432b4c5418ef503ca6de595b276da144ae4a34"
+hash = "68a979cfad4f0dbd0ad2e47d3ee8f73f789b9f5375bce87d51931163debc0ff8"
 metafile = true
 
 [[files]]
 file = "mods/sodium-options-api.pw.toml"
-hash = "faa58868fad174ceb591284edd09d114648a2fc69247bea6506cc3ced1399c7b"
+hash = "6082355694935c20249a6dce47436469eb785666c389b2df4f7427296d294b9c"
 metafile = true
 
 [[files]]
 file = "mods/sodium-shadowy-path-blocks.pw.toml"
-hash = "d784b4d9ee7f99008808bd6407cb3f402e46712c90f978b4ccfcd5e81eb7f794"
+hash = "728ee603d7528b9dae3db3149e7a9c5a59f27b19d017ae191f2c5c5f8d92ece4"
 metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "f73a48751e13380b87296e5b9627c9f6669efda386bd646fd5c499b344570f46"
+hash = "591131cc98e3b766789817f0ab096ff53b60309b8bc4cebb43deac65884ac101"
 metafile = true
 
 [[files]]
