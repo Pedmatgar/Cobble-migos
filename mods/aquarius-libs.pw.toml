@@ -1,13 +1,13 @@
 name = "Aquarius Libs"
-filename = "aquariuslibs-1.0.1b-fabric-1.21.1-0.116.7.jar"
+filename = "aquariuslibs-1.2.0-fabric-1.21.1-0.116.7.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/KkHnyaL6/versions/MEj81B0S/aquariuslibs-1.0.1b-fabric-1.21.1-0.116.7.jar"
+url = "https://cdn.modrinth.com/data/KkHnyaL6/versions/vCDUazpO/aquariuslibs-1.2.0-fabric-1.21.1-0.116.7.jar"
 hash-format = "sha512"
-hash = "3598a94c6acbdf792497d539441635a53220ff52d8c066ee02303a6375cac53ef7b409f104881b2dea3c7ebb343fa02ac7ada16dbca0a2c7170aa478de81b816"
+hash = "2845e56a82d353473a576e468e53d7da91777ac714921aa760fb81f3a080e4b9fedead6543a0c8d001d000f905e65eae6733770c1a497c841c48b8423c155b30"
 
 [update]
 [update.modrinth]
 mod-id = "KkHnyaL6"
-version = "MEj81B0S"
+version = "vCDUazpO"

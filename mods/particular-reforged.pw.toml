@@ -1,13 +1,13 @@
 name = "Particular ✨ Reforged"
-filename = "particular-1.21.1-Fabric-1.1.2.jar"
+filename = "particular-1.21.1-Fabric-1.5.5.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "aa59b31359c2211f4a2d401235c4926084d4f97e"
+hash = "de3740c49c41a32c6034d2cdc817f3aea96b4bb1"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 6500234
+file-id = 8275090
 project-id = 1219053

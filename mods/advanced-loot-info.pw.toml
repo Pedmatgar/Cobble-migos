@@ -1,13 +1,13 @@
-name = "Advanced Loot Info"
-filename = "AdvancedLootInfo-fabric-1.21.1-1.7.1.jar"
+name = "Advanced Loot Info (ALI)"
+filename = "AdvancedLootInfo-fabric-1.21.1-1.12.0.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "32d285b19eb0c09ffadcc8b67548c893a765202b"
+hash = "2fb517378bd07f1fea3595bbb26f5339e8b3e96b"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7537435
+file-id = 8168904
 project-id = 1205426

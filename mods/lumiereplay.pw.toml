@@ -1,13 +1,13 @@
 name = "Lumière Play"
-filename = "lumiereplay-0.1.0.jar"
+filename = "lumiereplay-0.3.0.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/1XgPBDMh/versions/QVkmhRzl/lumiereplay-0.1.0.jar"
+url = "https://cdn.modrinth.com/data/1XgPBDMh/versions/CYHE0Aso/lumiereplay-0.3.0.jar"
 hash-format = "sha512"
-hash = "0c6930efefcebf7ff653441e2a3f1500f1f1f9c5752c6216336f75c3071a1512a0b9830769f2e2ee9edb71cfc145a1e29a618920df417e011fd2ba550c56281b"
+hash = "5144ac2156bf5e7563f5cf10f94415989190d553f7471bee1959b8247be3e1fe018f91d2d2e7ed9f34d27444d8ed82ecfc071f3c5a1c3e08c9109ed7e0315a8d"
 
 [update]
 [update.modrinth]
 mod-id = "1XgPBDMh"
-version = "QVkmhRzl"
+version = "CYHE0Aso"

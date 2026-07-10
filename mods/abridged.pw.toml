@@ -1,13 +1,13 @@
 name = "Abridged"
-filename = "abridged-2.0.1-fabric-1.21.1.jar"
+filename = "abridged-2.0.2-fabric-21.1.jar"
 side = "server"
 
 [download]
-url = "https://cdn.modrinth.com/data/tb5O1ssC/versions/lDZabbgC/abridged-2.0.1-fabric-1.21.1.jar"
+url = "https://cdn.modrinth.com/data/tb5O1ssC/versions/wLKCu9vw/abridged-2.0.2-fabric-21.1.jar"
 hash-format = "sha512"
-hash = "a8c3b90e2fc772e802656d142bbeec0b4aa62fe8d7b8cb2bed8e972cd5b99c6dab0d9139924c25b740ed9380e552aa15d3286cf3682075db7fb059f52c90f8fc"
+hash = "dafde29ac28c33cd103c563d8b60c04b45ec09e2c139e7eb8b5a36543a98b6ee8066e09424bb459672c12eda6329f83a4619263f622a10e928b24ba265b3455f"
 
 [update]
 [update.modrinth]
 mod-id = "tb5O1ssC"
-version = "lDZabbgC"
+version = "wLKCu9vw"

@@ -1,13 +1,13 @@
 name = "Simple Voice Chat Group Player Names"
-filename = "voicechat-names-0.1.8.jar"
+filename = "voicechat-names-1.21.1-1.0.0.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/AcHVdC8l/versions/dBIZ4cSN/voicechat-names-0.1.8.jar"
+url = "https://cdn.modrinth.com/data/AcHVdC8l/versions/IdkXo54z/voicechat-names-1.21.1-1.0.0.jar"
 hash-format = "sha512"
-hash = "e1b812de761424e7e7d741fedc9f8ad2d5d4ac00bb3fc70ee399f196344ed16d69b46053a49f2e2c9b3b08fbb1d17fd52cabd43a879f7a275c70a3f9e7c171c4"
+hash = "3ba5a91ce6ca84416ee99fa3ddc2c570bdb7f73f98fb715dfd5da0d4d14891303a576069da82e599016c046d483cd0ac681197baa4a4078ccb418a4acee3dba3"
 
 [update]
 [update.modrinth]
 mod-id = "AcHVdC8l"
-version = "dBIZ4cSN"
+version = "IdkXo54z"
